@@ -14,61 +14,49 @@ This is the active working repository for The Collab: World Tour Part 1. Wheneve
 
 4. In Github Desktop, click on `File`, then `Clone repository...`. Enter `https://github.com/paulkim26/collab-worldtour1` in the Repository URL field and set your local path to some location on your computer that you can easily find (this is where the room files will be stored). Click `Clone`.
 
-<img width="392" alt="image" src="https://github.com/paulkim26/collab-/assets/45007945/3704ebf8-544d-4e78-82f5-884c87c26359">
-
-<img width="299" alt="image" src="https://github.com/paulkim26/collab-/assets/45007945/58d85e1a-38a2-49b8-9524-9733413c9e2e">
+![Screenshot 2024-04-07 171311](https://github.com/paulkim26/collab-worldtour1/assets/45007945/e78b8ec0-9a3b-416c-b10d-bf7739a23c13)
+![Screenshot 2024-04-07 171347](https://github.com/paulkim26/collab-worldtour1/assets/45007945/62aff5f3-1a7e-447d-a843-77a164b05bbe)
 
 The repository is now set up on your computer.
 
 ## How to push changes
 
-1. _IMPORTANT_ - make sure NO ONE is currently working on the repository. Due to the way Escape Simulator room files work, changes have to be made linearly.
+1. Check in the Discord #github channels that no one is currently working on the repository. Due to the way Escape Simulator room files work, only one person can work on the repository at a time.
 
 2. Let everyone know:
 
-   a) That you are working on the repository (so no one else does too at the same time).
+   a) That you are working on the repository.
 
    b) What you plan to change.
 
-   c) How long you expect to be doing the changes. (please don't take too long)
+   c) How long you expect to be making changes.
 
-3. _IMPORTANT_ - Always pull the latest version of the repository when you start. Do this by clicking `Fetch origin` at the top on Github Desktop. Make sure you are on the `main` branch.
+3. Always pull the latest version of the repository when you start. Do this by clicking `Fetch origin` at the top on Github Desktop. Make sure you are on the `main` branch.
 
-<img width="443" alt="image" src="https://github.com/paulkim26/collab-/assets/45007945/7184a651-0ffd-4241-bb95-df8bed1f4041">
+![Screenshot 2024-04-07 171415](https://github.com/paulkim26/collab-worldtour1/assets/45007945/35cb91b2-d380-40de-8343-02ef7f7c6409)
 
-4. Create a new branch - this will host your new changes. Click on the `Current branch main` dropdown and click `New branch`. Give it a descriptive name about what you're planning to add/fix like `zesty-add-section-c` or `zesty-fix-z04`. Once created, it should show your current branch is now changed.
+4. Create a new branch to host your new changes. Click on the `Current branch main` dropdown and click `New branch`. Give it a descriptive name about what you're planning to add/fix like `zesty-add-section-c` or `zesty-fix-z04`. Once created, it should show your current branch is now changed.
 
-<img width="414" alt="image" src="https://github.com/paulkim26/collab-/assets/45007945/c3e533c6-f52c-4162-9317-95fde336a3f0">
+![Screenshot 2024-04-07 171438](https://github.com/paulkim26/collab-worldtour1/assets/45007945/1e811842-8a11-4382-b19b-8c13ed87a143)
 
-5. Now we're gonna copy the room files to your Escape Simulator UGC folder. Find your local repository files (an easy way is to right click on `Current repository collab-` and select `Show in Explorer`). Copy the folder called `Room_collab_` into your UGC folder (where you have folders like `Room_1`, `Room_2`, etc.).
+5. Now copy the room files to your Escape Simulator UGC folder. Find your local repository files (an easy way is to right click on `Current repository collab-` and select `Show in Explorer`). Copy the folder called `Room_collabwt1` into your UGC folder (where you have folders like `Room_1`, `Room_2`).
 
-<img width="340" alt="image" src="https://github.com/paulkim26/collab-/assets/45007945/db6951bf-c298-42cd-ad8e-9a395fbd421c">
+![Screenshot 2024-04-07 171557](https://github.com/paulkim26/collab-worldtour1/assets/45007945/73a62352-aa62-4141-b7b8-b0a3e9050077)
 
-6. Boot up Escape Simulator and you should see this new room in your workshop. Make your changes.
+6. Start Escape Simulator and you should see this new room in your workshop. Make your changes. Your changes must adhere to the module requirements, otherwise your changes will be rejected for merge.
 
-7. Once all done, copy this folder back into your repository folder, completely replacing what was there before.
-
-   Note: Escape Simulator generates a `Backup` folder. Feel free to delete this or not. The repository is set to ignore this folder regardless.
+7. Once done, copy this folder back into your repository folder, completely replacing what was there before.
 
 8. Go back into Github Desktop - you should see new entries in the `Changes` sidebar. At the bottom where it says `Summary`, enter a short summary of what you changed and click `Commit`.
 
-<img width="458" alt="image" src="https://github.com/paulkim26/collab-/assets/45007945/547d8032-e097-4163-bfbe-51c73705f126">
+<img width="458" alt="243546476-547d8032-e097-4163-bfbe-51c73705f126" src="https://github.com/paulkim26/collab-worldtour1/assets/45007945/0e433cfe-05bd-4f56-8b70-5857f155aaee">
 
 9. Once committed, click on `Publish Branch` - this will push your branch to Github.
 
-<img width="571" alt="image" src="https://github.com/paulkim26/collab-/assets/45007945/fa588f06-58a3-4cc8-889d-752f5c589959">
+<img width="571" alt="243546603-fa588f06-58a3-4cc8-889d-752f5c589959" src="https://github.com/paulkim26/collab-worldtour1/assets/45007945/97d99dbd-ddc0-45cc-9738-2c6fc2b5ddb4">
 
-10. Go to the [Pull requests](https://github.com/paulkim26/collab-/pulls) tab on the Github page. Click on `New pull request`. In the `compare` dropdown, select your newly created branch. Then click `Create pull request`. In the `Open a pull request` form, describe what changes you've made and click `Create pull request`.
+10. Go to the [Pull requests](https://github.com/paulkim26/collab-worldtour1/pulls) tab on the Github page. Click on `New pull request`. In the `compare` dropdown, select your newly created branch. Then click `Create pull request`. In the `Open a pull request` form, describe what changes you've made and click `Create pull request`.
 
-<img width="386" alt="image" src="https://github.com/paulkim26/collab-/assets/45007945/34b664ec-f4e7-4360-83b8-3ee85a8b3ba8">
+<img width="446" alt="243547012-63a033a5-74a4-4408-83a3-3e42688d37c7" src="https://github.com/paulkim26/collab-worldtour1/assets/45007945/8d3efd5f-cbff-4f54-8764-549d9f9e605a">
 
-<img width="446" alt="image" src="https://github.com/paulkim26/collab-/assets/45007945/63a033a5-74a4-4408-83a3-3e42688d37c7">
-
-11. Post in the #github-pull-requests once the pull request is created. Once reviewed by another collaborator, they will merge your new changes in + the Steam workshop room owner will upload it to Steam Workshop.
-
-## Rules
-
-Pull requests must meet the following criteria to be accepted:
-
-- Follows filename convention (no random filenames)
-- Must be within project scope
+11. Post in the #github-pull-requests once the pull request is created. Another collaborator will review your changes. If accepted, they will merge your new changes in and one of the Collab managers will upload it to Steam Workshop. If rejected, you will be asked to make changes.
