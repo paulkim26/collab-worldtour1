@@ -60,3 +60,16 @@ The repository is now set up on your computer.
 <img width="446" alt="243547012-63a033a5-74a4-4408-83a3-3e42688d37c7" src="https://github.com/paulkim26/collab-worldtour1/assets/45007945/8d3efd5f-cbff-4f54-8764-549d9f9e605a">
 
 11. Post in the #github-pull-requests once the pull request is created. Another collaborator will review your changes. If accepted, they will merge your new changes in and one of the Collab managers will upload it to Steam Workshop. If rejected, you will be asked to make changes.
+
+## Workflows
+
+### Automatically formatting the Room.room file
+
+The GitHub workflow `.github/workflows/format-room.yml` will run after each push and automatically format the floating point values in the `Room.room` file to three digits. This is to avoid polluting the commit history with fluctuating floating point values generated in Escape Simulator.
+
+The formatting script can be manually run:
+
+1. Install [node.js](https://nodejs.org/en).
+2. Run command `node scripts/format-room.js`.
+
+Note: All pull requests need to squash and merge commits for this to be effective.
