@@ -1763,15 +1763,15 @@
 		},
 		{
 			"sampler":0,
+			"source":9
+		},
+		{
+			"sampler":0,
 			"source":10
 		},
 		{
 			"sampler":0,
 			"source":11
-		},
-		{
-			"sampler":0,
-			"source":12
 		}
 	],
 	"images":[
@@ -1812,18 +1812,13 @@
 		},
 		{
 			"mimeType":"image/png",
-			"name":"tx_hub_wood",
-			"uri":"tx_hub_wood.png"
+			"name":"tx_hub_TrimWoodColor",
+			"uri":"tx_hub_TrimWoodColor.png"
 		},
 		{
 			"mimeType":"image/png",
 			"name":"tx_hub_wroughtironNormal",
 			"uri":"tx_hub_wroughtironNormal.png"
-		},
-		{
-			"mimeType":"image/jpeg",
-			"name":"metal_0056_color_2k",
-			"uri":"metal_0056_color_2k.jpg"
 		},
 		{
 			"mimeType":"image/jpeg",

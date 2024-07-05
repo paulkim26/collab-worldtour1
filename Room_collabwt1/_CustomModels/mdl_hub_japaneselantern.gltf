@@ -3,6 +3,9 @@
 		"generator":"Khronos glTF Blender I/O v4.1.62",
 		"version":"2.0"
 	},
+	"extensionsUsed":[
+		"KHR_materials_specular"
+	],
 	"scene":0,
 	"scenes":[
 		{
@@ -86,8 +89,8 @@
 			],
 			"scale":[
 				0.009999999776482582,
-				0.009999999776482582,
-				0.009999999776482582
+				0.009999998845160007,
+				0.009999998845160007
 			]
 		},
 		{
@@ -113,6 +116,11 @@
 			],
 			"emissiveTexture":{
 				"index":0
+			},
+			"extensions":{
+				"KHR_materials_specular":{
+					"specularFactor":0
+				}
 			},
 			"name":"standardSurface2.003",
 			"normalTexture":{
@@ -210,19 +218,24 @@
 		},
 		{
 			"sampler":0,
-			"source":0
+			"source":2
 		}
 	],
 	"images":[
 		{
 			"mimeType":"image/png",
-			"name":"tx_hub_japaneselantern_Color",
-			"uri":"tx_hub_japaneselantern_Color.png"
+			"name":"tx_hub_japaneslanternEmission",
+			"uri":"tx_hub_japaneslanternEmission.png"
 		},
 		{
 			"mimeType":"image/png",
 			"name":"tx_hub_japaneselantern_Normal",
 			"uri":"tx_hub_japaneselantern_Normal.png"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"tx_hub_japaneselantern_Color",
+			"uri":"tx_hub_japaneselantern_Color.png"
 		}
 	],
 	"accessors":[
