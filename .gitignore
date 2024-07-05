@@ -1,4 +1,7 @@
+# Ignore all room folders except for world tour
+/Room_**
+!/Room_collabwt1
+
+# Ignore backup/temp folders
 **/Backups/
 **/Temp
-/Room_**
-!/Room_collab**
