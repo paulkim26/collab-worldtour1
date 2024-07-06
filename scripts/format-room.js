@@ -25,7 +25,7 @@ const formatRoom = async (filePath, encoding = "utf8") => {
  * @param   room    Room.room as JSON object.
  * @param   digits  Number of digits after decimal point to round to.
  */
-const roundValues = (room, digits = 3) => {
+const roundValues = (room, digits = 4) => {
     room.cameraScreenshotPosition.x = Number(room.cameraScreenshotPosition.x.toFixed(digits))
     room.cameraScreenshotPosition.y = Number(room.cameraScreenshotPosition.y.toFixed(digits))
     room.cameraScreenshotPosition.z = Number(room.cameraScreenshotPosition.z.toFixed(digits))
