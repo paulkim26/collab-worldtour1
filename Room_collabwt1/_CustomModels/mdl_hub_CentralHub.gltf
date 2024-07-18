@@ -817,12 +817,9 @@
 				}
 			},
 			"name":"Trim",
-			"normalTexture":{
-				"index":6
-			},
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
-					"index":7
+					"index":6
 				},
 				"metallicFactor":0,
 				"roughnessFactor":0.8181818127632141
@@ -837,14 +834,14 @@
 			},
 			"name":"iron",
 			"normalTexture":{
-				"index":8
+				"index":7
 			},
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
-					"index":9
+					"index":8
 				},
 				"metallicRoughnessTexture":{
-					"index":10
+					"index":9
 				}
 			}
 		},
@@ -857,12 +854,12 @@
 			},
 			"name":"Brick",
 			"normalTexture":{
-				"index":11,
+				"index":10,
 				"scale":1.5
 			},
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
-					"index":12
+					"index":11
 				},
 				"metallicFactor":0,
 				"roughnessFactor":0.8227272629737854
@@ -1759,7 +1756,7 @@
 		},
 		{
 			"sampler":0,
-			"source":9
+			"source":8
 		},
 		{
 			"sampler":0,
@@ -1768,10 +1765,6 @@
 		{
 			"sampler":0,
 			"source":10
-		},
-		{
-			"sampler":0,
-			"source":11
 		}
 	],
 	"images":[
@@ -1804,11 +1797,6 @@
 			"mimeType":"image/png",
 			"name":"tx_hub_FloorColor",
 			"uri":"tx_hub_FloorColor.png"
-		},
-		{
-			"mimeType":"image/png",
-			"name":"tx_hub_TrimWoodNormal",
-			"uri":"tx_hub_TrimWoodNormal.png"
 		},
 		{
 			"mimeType":"image/png",
