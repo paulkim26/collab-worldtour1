@@ -4,8 +4,7 @@
 		"version":"2.0"
 	},
 	"extensionsUsed":[
-		"KHR_materials_specular",
-		"KHR_materials_ior"
+		"KHR_materials_specular"
 	],
 	"scene":0,
 	"scenes":[
@@ -78,7 +77,7 @@
 					"specularFactor":0
 				}
 			},
-			"name":"Material.006",
+			"name":"Material.007",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
 					"index":2
@@ -140,12 +139,9 @@
 			"extensions":{
 				"KHR_materials_specular":{
 					"specularFactor":0
-				},
-				"KHR_materials_ior":{
-					"ior":1.4500000476837158
 				}
 			},
-			"name":"Material",
+			"name":"Material.006",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
 					"index":6
@@ -258,38 +254,38 @@
 	"images":[
 		{
 			"mimeType":"image/png",
-			"name":"tx_hub_planeticket (5)",
-			"uri":"tx_hub_planeticket%205.png"
+			"name":"tx_hub_planeticket3",
+			"uri":"tx_hub_planeticket3.png"
 		},
 		{
 			"mimeType":"image/png",
-			"name":"tx_hub_planeticket (2)",
-			"uri":"tx_hub_planeticket%202.png"
+			"name":"tx_hub_planeticket1",
+			"uri":"tx_hub_planeticket1.png"
 		},
 		{
 			"mimeType":"image/png",
-			"name":"tx_hub_planeticket (7)",
-			"uri":"tx_hub_planeticket%207.png"
+			"name":"tx_hub_planeticket7",
+			"uri":"tx_hub_planeticket7.png"
 		},
 		{
 			"mimeType":"image/png",
-			"name":"tx_hub_planeticket (6)",
-			"uri":"tx_hub_planeticket%206.png"
+			"name":"tx_hub_planeticket5",
+			"uri":"tx_hub_planeticket5.png"
 		},
 		{
 			"mimeType":"image/png",
-			"name":"tx_hub_planeticket (4)",
-			"uri":"tx_hub_planeticket%204.png"
+			"name":"tx_hub_planeticket4",
+			"uri":"tx_hub_planeticket4.png"
 		},
 		{
 			"mimeType":"image/png",
-			"name":"tx_hub_planeticket",
-			"uri":"tx_hub_planeticket.png"
+			"name":"tx_hub_planeticket2",
+			"uri":"tx_hub_planeticket2.png"
 		},
 		{
 			"mimeType":"image/png",
-			"name":"tx_hub_planeticket (3)",
-			"uri":"tx_hub_planeticket%203.png"
+			"name":"tx_hub_planeticket6",
+			"uri":"tx_hub_planeticket6.png"
 		}
 	],
 	"accessors":[
@@ -298,14 +294,14 @@
 			"componentType":5126,
 			"count":4,
 			"max":[
-				3.4900004863739014,
-				0.05999999865889549,
-				1.0299999713897705
+				4.616406440734863,
+				0.07310988008975983,
+				1.0528393983840942
 			],
 			"min":[
-				1.4900004863739014,
-				0.05999999865889549,
-				-0.9700000286102295
+				1.5188348293304443,
+				0.07310988008975983,
+				-1.0341215133666992
 			],
 			"type":"VEC3"
 		},
@@ -332,14 +328,14 @@
 			"componentType":5126,
 			"count":4,
 			"max":[
-				5.88789176940918,
-				0.09310987591743469,
-				1.0077033042907715
+				6.853250503540039,
+				0.11310987174510956,
+				0.8758317828178406
 			],
 			"min":[
-				1.796543836593628,
-				0.09310987591743469,
-				-1.0935847759246826
+				2.0219333171844482,
+				0.11310987174510956,
+				-1.1789469718933105
 			],
 			"type":"VEC3"
 		},
@@ -394,14 +390,14 @@
 			"componentType":5126,
 			"count":4,
 			"max":[
-				2.1042492389678955,
-				0.03114844113588333,
-				0.868503987789154
+				2.9762377738952637,
+				0.03999999910593033,
+				0.9682899117469788
 			],
 			"min":[
-				-0.39914190769195557,
-				0.03114844113588333,
-				-1.1793488264083862
+				0.4728468358516693,
+				0.03999999910593033,
+				-1.0795629024505615
 			],
 			"type":"VEC3"
 		},
@@ -422,14 +418,14 @@
 			"componentType":5126,
 			"count":4,
 			"max":[
-				2.9762377738952637,
-				0.03999999910593033,
-				0.9682899117469788
+				3.4900004863739014,
+				0.05999999865889549,
+				1.0299999713897705
 			],
 			"min":[
-				0.4728468358516693,
-				0.03999999910593033,
-				-1.0795629024505615
+				1.4900004863739014,
+				0.05999999865889549,
+				-0.9700000286102295
 			],
 			"type":"VEC3"
 		},
@@ -450,14 +446,14 @@
 			"componentType":5126,
 			"count":4,
 			"max":[
-				4.616406440734863,
-				0.07310988008975983,
-				1.0528393983840942
+				5.88789176940918,
+				0.09310987591743469,
+				1.0077033042907715
 			],
 			"min":[
-				1.5188348293304443,
-				0.07310988008975983,
-				-1.0341215133666992
+				1.796543836593628,
+				0.09310987591743469,
+				-1.0935847759246826
 			],
 			"type":"VEC3"
 		},
@@ -478,14 +474,14 @@
 			"componentType":5126,
 			"count":4,
 			"max":[
-				6.853250503540039,
-				0.11310987174510956,
-				0.8758317828178406
+				2.1042492389678955,
+				0.03114844113588333,
+				0.868503987789154
 			],
 			"min":[
-				2.0219333171844482,
-				0.11310987174510956,
-				-1.1789469718933105
+				-0.39914190769195557,
+				0.03114844113588333,
+				-1.1793488264083862
 			],
 			"type":"VEC3"
 		},
