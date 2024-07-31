@@ -1,8 +1,58 @@
---[[
-    Author: GG3L (@GGӡL)
-    Script: Clock
-    Description: This script adds the ability to create functional hand clocks.
-    
-    All rights reserved by the author. Unauthorized distribution or modification is prohibited.
-]]
-if callType==LuaCallType.Init then a={}function b(c)d=c.gameObject.GetComponent('Element')e=string.match(d.playerVariableName,"{(%d+)}")return tonumber(e)end function f(g,h)if g then g.transform.rotation=h end end for _,i in ipairs(clock)do d=i.gameObject.GetComponent('Element')j=0 if d.elementName~=''then k,l=string.match(d.elementName,"(%d+):(%d+)")j=(k*3600)+(l*60)end table.insert(a,{m=false,n=j,o=0})end end if callType==LuaCallType.SwitchDone then if api.contains(clockToggle,context)and context.isOn then p=b(context)a[p].o=0 a[p].m=not a[p].m end end if callType==LuaCallType.Update then for q,r in ipairs(a)do if r.m and Time.time-r.o>=1 then s=math.floor(r.n/3600)t=math.floor((r.n % 3600)/60)u=r.n % 60 v=u*(360/60)w=(t*6)+(u*0.1)x=((s % 12)*30)+(t*0.5)+(u*(0.5/60))f(clockHourHand[q],Quaternion.Euler(0,0,-x))f(clockMinuteHand[q],Quaternion.Euler(0,0,-w))f(clockSecondHand[q],Quaternion.Euler(0,0,-v))if clockSound[q]then api.activateSwitch(clockSound[q])end r.n=r.n+1 r.o=Time.time end end end
+if callType == LuaCallType.Init then
+	clocks = {}
+
+	function getIndex(context)
+        local element = context.gameObject.GetComponent('Element')
+        local index = string.match(element.playerVariableName, "{(%d+)}")
+        return tonumber(index)
+    end
+
+	function setHandRotation(hand, rotation)
+		if hand then
+			hand.transform.rotation = rotation
+		end
+	end
+
+	for _, clk in ipairs(clock) do
+		local element = clk.gameObject.GetComponent('Element')
+		local seconds = 0
+		if element.elementName ~= '' then
+			local hours, minutes = string.match(element.elementName, "(%d+):(%d+)")
+			seconds = (hours * 3600) + (minutes * 60)
+		end
+		table.insert(clocks, {
+			active = false,
+			seconds = seconds,
+			last = 0
+		})
+	end
+end
+
+if callType == LuaCallType.SwitchDone then
+	if api.contains(clockToggle, context) and context.isOn then
+		local index = getIndex(context)
+		clocks[index].last = 0
+		clocks[index].active = not clocks[index].active
+	end
+end
+
+if callType == LuaCallType.Update then
+	for index, clk in ipairs(clocks) do
+		if clk.active and Time.time - clk.last >= 1 then
+			local hours = math.floor(clk.seconds / 3600)
+			local minutes = math.floor((clk.seconds % 3600) / 60)
+			local seconds = clk.seconds % 60
+			local secondAngle = seconds * (360 / 60)
+			local minuteAngle = (minutes * 6) + (seconds * 0.1)
+			local hourAngle = ((hours % 12) * 30) + (minutes * 0.5) + (seconds * (0.5 / 60))
+			setHandRotation(clockHourHand[index], Quaternion.Euler(0, 0, -hourAngle))
+			setHandRotation(clockMinuteHand[index], Quaternion.Euler(0, 0, -minuteAngle))
+			setHandRotation(clockSecondHand[index], Quaternion.Euler(0, 0, -secondAngle))
+			if clockSound[index] then
+				api.activateSwitch(clockSound[index])
+			end
+			clk.seconds = clk.seconds + 1
+			clk.last = Time.time
+		end
+	end
+end
