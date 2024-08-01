@@ -1,0 +1,18 @@
+Rome:
+Moon/skybox transition not working or missing
+
+Thailaind:
+Unsure but I think some yellow texture is missing in spots that are showing as white. 
+**Waiting for namo to confirm
+
+GG3L:
+Travel select buttons
+Ending screen (I set up the lock and can show you where)
+Fix draggable/obstacle issue
+
+Zesty:
+Trash can models and script
+Token display
+
+Brush:
+Hide tokens
