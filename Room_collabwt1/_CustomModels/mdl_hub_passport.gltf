@@ -1,6 +1,6 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.1.62",
+		"generator":"Khronos glTF Blender I/O v4.0.44",
 		"version":"2.0"
 	},
 	"extensionsUsed":[
@@ -24,23 +24,7 @@
 		},
 		{
 			"mesh":1,
-			"name":"paper",
-			"rotation":[
-				-0.9814727902412415,
-				-0.004451857414096594,
-				-0.00625390512868762,
-				0.19144801795482635
-			],
-			"scale":[
-				0.8646913766860962,
-				0.8646913170814514,
-				0.5122886300086975
-			],
-			"translation":[
-				-0.0880207046866417,
-				-0.10782226920127869,
-				0.004402637481689453
-			]
+			"name":"paper"
 		}
 	],
 	"materials":[
@@ -54,7 +38,7 @@
 					"ior":1
 				}
 			},
-			"name":"Material",
+			"name":"Material.001",
 			"normalTexture":{
 				"index":0
 			},
@@ -63,21 +47,26 @@
 					"index":1
 				},
 				"metallicFactor":0,
-				"roughnessFactor":0.8545454740524292
+				"roughnessFactor":0.75
 			}
 		},
 		{
 			"doubleSided":true,
+			"extensions":{
+				"KHR_materials_specular":{
+					"specularFactor":0
+				}
+			},
 			"name":"Paper",
+			"normalTexture":{
+				"index":2
+			},
 			"pbrMetallicRoughness":{
-				"baseColorFactor":[
-					0.5723546147346497,
-					0.6057493090629578,
-					0.4859248995780945,
-					1
-				],
+				"baseColorTexture":{
+					"index":3
+				},
 				"metallicFactor":0,
-				"roughnessFactor":0.5
+				"roughnessFactor":0.75
 			}
 		}
 	],
@@ -119,6 +108,14 @@
 		{
 			"sampler":0,
 			"source":1
+		},
+		{
+			"sampler":0,
+			"source":2
+		},
+		{
+			"sampler":0,
+			"source":3
 		}
 	],
 	"images":[
@@ -131,6 +128,16 @@
 			"mimeType":"image/png",
 			"name":"tx_hub_Leather47Color",
 			"uri":"tx_hub_Leather47Color.png"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"tx_hub_passport_n",
+			"uri":"tx_hub_passport_n.png"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"tx_hub_passport_a",
+			"uri":"tx_hub_passport_a.png"
 		}
 	],
 	"accessors":[
@@ -173,14 +180,14 @@
 			"componentType":5126,
 			"count":96,
 			"max":[
-				1.179093360900879,
-				0.5076014995574951,
-				3.151898145675659
+				0.9532917737960815,
+				0.13094954192638397,
+				0.599970281124115
 			],
 			"min":[
-				-1.0000001192092896,
-				-0.033657629042863846,
-				-1.218530535697937
+				-0.9592947959899902,
+				-0.3533366322517395,
+				-1.6662520170211792
 			],
 			"type":"VEC3"
 		},
