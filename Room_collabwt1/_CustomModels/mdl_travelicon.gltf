@@ -1,15 +1,10 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.2.57",
+		"generator":"Khronos glTF Blender I/O v4.0.44",
 		"version":"2.0"
 	},
 	"extensionsUsed":[
-		"KHR_materials_clearcoat",
-		"KHR_materials_transmission",
-		"KHR_materials_emissive_strength",
 		"KHR_materials_specular",
-		"KHR_materials_sheen",
-		"KHR_materials_anisotropy",
 		"KHR_materials_ior"
 	],
 	"scene":0,
@@ -17,105 +12,34 @@
 		{
 			"name":"Scene",
 			"nodes":[
-				3,
-				4,
-				5
+				0,
+				1
 			]
 		}
 	],
 	"nodes":[
 		{
-			"name":"Sphere",
-			"rotation":[
-				-0.70710688829422,
-				0,
-				0,
-				0.7071066498756409
-			],
-			"scale":[
-				99.99999237060547,
-				99.99999237060547,
-				99.99999237060547
-			]
-		},
-		{
-			"children":[
-				0
-			],
-			"name":"RootNode",
-			"scale":[
-				0.5220043659210205,
-				0.5220043659210205,
-				0.5220043659210205
-			]
-		},
-		{
-			"children":[
-				1
-			],
-			"name":"8a888f66473549c99c3f97fb5030482f.fbx",
-			"rotation":[
-				0.70710688829422,
-				0,
-				0,
-				0.7071066498756409
-			]
-		},
-		{
-			"children":[
-				2
-			],
-			"name":"Sketchfab_model",
-			"rotation":[
-				-0.70710688829422,
-				0,
-				0,
-				0.7071066498756409
-			]
-		},
-		{
 			"mesh":0,
-			"name":"Sphere.001",
-			"rotation":[
-				1,
-				0,
-				0,
-				0
-			],
-			"scale":[
-				0.5220043659210205,
-				0.5220043659210205,
-				0.5220043659210205
-			]
+			"name":"Sphere.001"
 		},
 		{
 			"mesh":1,
-			"name":"Sphere.003",
-			"scale":[
-				0.5170619487762451,
-				0.5170619487762451,
-				0.5170619487762451
-			]
+			"name":"Sphere.002"
 		}
 	],
 	"materials":[
 		{
+			"alphaMode":"BLEND",
+			"doubleSided":true,
 			"extensions":{
 				"KHR_materials_specular":{
-					"specularColorFactor":[
-						0.0,
-						0.0,
-						0.0
-					]
-				},
-				"KHR_materials_sheen":{
-					"sheenRoughnessFactor":1
+					"specularFactor":0
 				},
 				"KHR_materials_ior":{
-					"ior":1
+					"ior":1.4500000476837158
 				}
 			},
-			"name":"Matte AB",
+			"name":"Material.001",
 			"normalTexture":{
 				"index":0
 			},
@@ -123,60 +47,8 @@
 				"baseColorTexture":{
 					"index":1
 				},
-				"metallicFactor":0
-			}
-		},
-		{
-			"alphaMode":"BLEND",
-			"doubleSided":true,
-			"emissiveFactor":[
-				1,
-				1,
-				1
-			],
-			"extensions":{
-				"KHR_materials_clearcoat":{
-					"clearcoatFactor":1,
-					"clearcoatRoughnessFactor":0.2980412244796753
-				},
-				"KHR_materials_transmission":{
-					"transmissionFactor":0.8041236996650696
-				},
-				"KHR_materials_emissive_strength":{
-					"emissiveStrength":1.0698188205209505
-				},
-				"KHR_materials_specular":{
-					"specularColorFactor":[
-						0.0,
-						0.0,
-						0.0
-					]
-				},
-				"KHR_materials_sheen":{
-					"sheenColorFactor":[
-						0.010392126627266407,
-						0.010392126627266407,
-						0.010392126627266407
-					],
-					"sheenRoughnessFactor":0.5
-				},
-				"KHR_materials_anisotropy":{
-					"anisotropyStrength":1
-				},
-				"KHR_materials_ior":{
-					"ior":1
-				}
-			},
-			"name":"Material.001",
-			"pbrMetallicRoughness":{
-				"baseColorFactor":[
-					0,
-					0,
-					0,
-					0.9714285731315613
-				],
-				"metallicFactor":0.14432989060878754,
-				"roughnessFactor":0.500981867313385
+				"metallicFactor":0.5,
+				"roughnessFactor":0.75
 			}
 		}
 	],
@@ -196,7 +68,7 @@
 			]
 		},
 		{
-			"name":"Sphere.002",
+			"name":"Sphere.001",
 			"primitives":[
 				{
 					"attributes":{
@@ -205,7 +77,7 @@
 						"TEXCOORD_0":6
 					},
 					"indices":7,
-					"material":1
+					"material":0
 				}
 			]
 		}
@@ -216,7 +88,7 @@
 			"source":0
 		},
 		{
-			"sampler":1,
+			"sampler":0,
 			"source":1
 		}
 	],
@@ -236,35 +108,35 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":1118,
+			"count":559,
 			"max":[
-				0.9999997019767761,
-				1,
-				0.9999993443489075
+				0.24999992549419403,
+				0.25,
+				0.25
 			],
 			"min":[
-				-0.9999990463256836,
-				-1,
-				-1
+				-0.2499997615814209,
+				-0.25,
+				-0.24999983608722687
 			],
 			"type":"VEC3"
 		},
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":1118,
+			"count":559,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":1118,
+			"count":559,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":5760,
+			"count":2880,
 			"type":"SCALAR"
 		},
 		{
@@ -272,14 +144,14 @@
 			"componentType":5126,
 			"count":559,
 			"max":[
-				0.9999997019767761,
-				1,
-				0.9999993443489075
+				0.24999992549419403,
+				0.25,
+				0.25
 			],
 			"min":[
-				-0.9999990463256836,
-				-1,
-				-1
+				-0.2499997615814209,
+				-0.25,
+				-0.24999983608722687
 			],
 			"type":"VEC3"
 		},
@@ -305,50 +177,50 @@
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":13416,
+			"byteLength":6708,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":13416,
-			"byteOffset":13416,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":8944,
-			"byteOffset":26832,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":11520,
-			"byteOffset":35776,
-			"target":34963
-		},
-		{
-			"buffer":0,
 			"byteLength":6708,
-			"byteOffset":47296,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":6708,
-			"byteOffset":54004,
+			"byteOffset":6708,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":4472,
-			"byteOffset":60712,
+			"byteOffset":13416,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":5760,
-			"byteOffset":65184,
+			"byteOffset":17888,
+			"target":34963
+		},
+		{
+			"buffer":0,
+			"byteLength":6708,
+			"byteOffset":23648,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":6708,
+			"byteOffset":30356,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":4472,
+			"byteOffset":37064,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":5760,
+			"byteOffset":41536,
 			"target":34963
 		}
 	],
@@ -356,17 +228,11 @@
 		{
 			"magFilter":9729,
 			"minFilter":9987
-		},
-		{
-			"magFilter":9729,
-			"minFilter":9987,
-			"wrapS":33071,
-			"wrapT":33071
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":70944,
+			"byteLength":47296,
 			"uri":"mdl_travelicon.bin"
 		}
 	]
