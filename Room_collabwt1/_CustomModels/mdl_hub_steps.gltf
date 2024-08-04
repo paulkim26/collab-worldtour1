@@ -1,10 +1,10 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.1.62",
+		"generator":"Khronos glTF Blender I/O v4.2.57",
 		"version":"2.0"
 	},
 	"extensionsUsed":[
-		"KHR_materials_clearcoat"
+		"KHR_materials_specular"
 	],
 	"scene":0,
 	"scenes":[
@@ -18,24 +18,37 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"Wall Textures Bake.063"
+			"name":"Wall Textures Bake.063",
+			"scale":[
+				1,
+				1.0890827178955078,
+				1
+			],
+			"translation":[
+				-3.74680233001709,
+				2.4336354732513428,
+				2.0208213329315186
+			]
 		}
 	],
 	"materials":[
 		{
 			"doubleSided":true,
 			"extensions":{
-				"KHR_materials_clearcoat":{
-					"clearcoatFactor":0.013888888992369175,
-					"clearcoatRoughnessFactor":0
+				"KHR_materials_specular":{
+					"specularFactor":0
 				}
 			},
-			"name":"Light Wood.006",
+			"name":"Light Wood",
+			"normalTexture":{
+				"index":0
+			},
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
-					"index":0
+					"index":1
 				},
-				"metallicFactor":0
+				"metallicFactor":0,
+				"roughnessFactor":0.7727272510528564
 			}
 		}
 	],
@@ -59,9 +72,18 @@
 		{
 			"sampler":0,
 			"source":0
+		},
+		{
+			"sampler":0,
+			"source":1
 		}
 	],
 	"images":[
+		{
+			"mimeType":"image/png",
+			"name":"tx_hub_accentwoodNormal",
+			"uri":"tx_hub_accentwoodNormal.png"
+		},
 		{
 			"mimeType":"image/png",
 			"name":"tx_hubAccentWoodColor",
@@ -74,14 +96,14 @@
 			"componentType":5126,
 			"count":192,
 			"max":[
-				-1.4771597385406494,
-				4.4601922035217285,
-				3.054349184036255
+				2.2820217609405518,
+				1.8055431842803955,
+				0.9926761388778687
 			],
 			"min":[
-				-5.833345413208008,
-				0.47555968165397644,
-				0.6004257202148438
+				-2.0741639137268066,
+				-1.805558204650879,
+				-1.4612473249435425
 			],
 			"type":"VEC3"
 		},
