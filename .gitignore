@@ -9,3 +9,6 @@ Room_**
 # Ignore backup/temp folders
 **/Backups/
 **/Temp
+
+# OS specific files
+**/.DS_Store
