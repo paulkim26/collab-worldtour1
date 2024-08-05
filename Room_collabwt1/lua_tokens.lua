@@ -11,13 +11,6 @@
     All rights reserved by the author.
 ]] if callType == LuaCallType.Init then
     a = 0
-    tokenDisplays = {zesty_tokendoor_display1, zesty_tokendoor_display2, zesty_tokendoor_display3,
-                     zesty_tokendoor_display4, zesty_tokendoor_display5, zesty_tokendoor_display6,
-                     zesty_tokendoor_display7, zesty_tokendoor_display8, zesty_tokendoor_display9,
-                     zesty_tokendoor_display10, zesty_tokendoor_display11, zesty_tokendoor_display12,
-                     zesty_tokendoor_display13, zesty_tokendoor_display14, zesty_tokendoor_display15,
-                     zesty_tokendoor_display16, zesty_tokendoor_display17, zesty_tokendoor_display18,
-                     zesty_tokendoor_display19, zesty_tokendoor_display20}
     for _, b in pairs(token) do
         c = api["\103\101\116\69\108\101\109\101\110\116"](b)
         c["\99\111\108\108\101\99\116\105\111\110\73\100"] = 1350
@@ -44,7 +37,7 @@
 
         end
         -- Display tokens on token door
-        api.setLockValue(tokenDisplays[a], 1, 1)
+        api.setLockValue(_G["zesty_tokendoor_display" .. a], 1, 1)
     end
 end
 if callType == LuaCallType.SwitchDone then
