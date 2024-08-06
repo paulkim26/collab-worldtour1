@@ -1,12 +1,8 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.0.44",
+		"generator":"Khronos glTF Blender I/O v4.2.57",
 		"version":"2.0"
 	},
-	"extensionsUsed":[
-		"KHR_materials_specular",
-		"KHR_materials_ior"
-	],
 	"scene":0,
 	"scenes":[
 		{
@@ -19,35 +15,35 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"mdl_hub_plaque_australia"
+			"name":"Sphere",
+			"scale":[
+				0.20539873838424683,
+				0.20539873838424683,
+				0.20539873838424683
+			]
 		}
 	],
 	"materials":[
 		{
 			"doubleSided":true,
-			"extensions":{
-				"KHR_materials_specular":{
-					"specularFactor":0.20000000298023224
-				},
-				"KHR_materials_ior":{
-					"ior":1.4500000476837158
-				}
-			},
-			"name":"Material.001",
-			"normalTexture":{
-				"index":0
-			},
+			"emissiveFactor":[
+				0.015937860850223196,
+				0.015937860850223196,
+				0.015937860850223196
+			],
+			"name":"Material",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
-					"index":1
+					"index":0
 				},
-				"roughnessFactor":0.75
+				"metallicFactor":0,
+				"roughnessFactor":0.7603174448013306
 			}
 		}
 	],
 	"meshes":[
 		{
-			"name":"Plane.009",
+			"name":"Sphere",
 			"primitives":[
 				{
 					"attributes":{
@@ -65,83 +61,74 @@
 		{
 			"sampler":0,
 			"source":0
-		},
-		{
-			"sampler":0,
-			"source":1
 		}
 	],
 	"images":[
 		{
 			"mimeType":"image/png",
-			"name":"tx_hub_country_plaques_n",
-			"uri":"tx_hub_country_plaques_n.png"
-		},
-		{
-			"mimeType":"image/png",
-			"name":"tx_hub_country_plaques_a",
-			"uri":"tx_hub_country_plaques_a.png"
+			"name":"tx_hub_sound",
+			"uri":"tx_hub_sound.png"
 		}
 	],
 	"accessors":[
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":36,
+			"count":559,
 			"max":[
-				0.1499999761581421,
-				-2.7939672797572257e-10,
-				0.031908731907606125
+				0.9999997019767761,
+				1,
+				0.9999993443489075
 			],
 			"min":[
-				-0.1499999761581421,
-				-0.005680905655026436,
-				-0.031908731907606125
+				-0.9999990463256836,
+				-1,
+				-1
 			],
 			"type":"VEC3"
 		},
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":36,
+			"count":559,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":36,
+			"count":559,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":78,
+			"count":2880,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":432,
+			"byteLength":6708,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":432,
-			"byteOffset":432,
+			"byteLength":6708,
+			"byteOffset":6708,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":288,
-			"byteOffset":864,
+			"byteLength":4472,
+			"byteOffset":13416,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":156,
-			"byteOffset":1152,
+			"byteLength":5760,
+			"byteOffset":17888,
 			"target":34963
 		}
 	],
@@ -153,8 +140,8 @@
 	],
 	"buffers":[
 		{
-			"byteLength":1308,
-			"uri":"mdl_hub_plaque_australia.bin"
+			"byteLength":23648,
+			"uri":"mdl_hub_soundicon.bin"
 		}
 	]
 }
