@@ -1,6 +1,6 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.1.62",
+		"generator":"Khronos glTF Blender I/O v4.2.57",
 		"version":"2.0"
 	},
 	"scene":0,
@@ -92,7 +92,7 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":320,
+			"count":336,
 			"max":[
 				1,
 				1,
@@ -108,13 +108,13 @@
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":320,
+			"count":336,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":320,
+			"count":336,
 			"type":"VEC2"
 		},
 		{
@@ -127,26 +127,26 @@
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":3840,
+			"byteLength":4032,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":3840,
-			"byteOffset":3840,
+			"byteLength":4032,
+			"byteOffset":4032,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":2560,
-			"byteOffset":7680,
+			"byteLength":2688,
+			"byteOffset":8064,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":1128,
-			"byteOffset":10240,
+			"byteOffset":10752,
 			"target":34963
 		}
 	],
@@ -158,8 +158,8 @@
 	],
 	"buffers":[
 		{
-			"byteLength":11368,
-			"uri":"phaistos.bin"
+			"byteLength":11880,
+			"uri":"mdl_Krank_phaistos.bin"
 		}
 	]
 }
