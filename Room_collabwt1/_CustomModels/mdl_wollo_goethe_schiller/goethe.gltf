@@ -1,35 +1,97 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.0.44",
+		"generator":"Khronos glTF Blender I/O v4.2.57",
 		"version":"2.0"
 	},
 	"extensionsUsed":[
-		"KHR_materials_specular",
-		"KHR_materials_ior"
+		"KHR_materials_specular"
 	],
 	"scene":0,
 	"scenes":[
 		{
 			"name":"Scene",
 			"nodes":[
-				0,
-				1,
-				2
+				5,
+				6
 			]
 		}
 	],
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"goethe-body"
+			"name":"Object_3",
+			"translation":[
+				-0.8530551791191101,
+				-29.085731506347656,
+				16.275096893310547
+			]
 		},
 		{
 			"mesh":1,
-			"name":"goethe-head1"
+			"name":"Object_3.001",
+			"translation":[
+				-0.8530551791191101,
+				-28.989364624023438,
+				16.275096893310547
+			]
 		},
 		{
 			"mesh":2,
-			"name":"goethe-head2"
+			"name":"Object_3.002",
+			"translation":[
+				-0.8530551791191101,
+				-29.085731506347656,
+				16.275096893310547
+			]
+		},
+		{
+			"mesh":3,
+			"name":"Object_3.003",
+			"translation":[
+				-0.8530551791191101,
+				-29.115013122558594,
+				16.275096893310547
+			]
+		},
+		{
+			"children":[
+				0,
+				1,
+				2,
+				3
+			],
+			"name":"Goethe-Schiller-Denkmal.obj.cleaner.materialmerger.gles"
+		},
+		{
+			"children":[
+				4
+			],
+			"name":"Sketchfab_model",
+			"rotation":[
+				-0.9995548129081726,
+				0,
+				-0.029836134985089302,
+				8.867667863539667e-16
+			],
+			"translation":[
+				0.1012631356716156,
+				-19.566621780395508,
+				16.174156188964844
+			]
+		},
+		{
+			"mesh":4,
+			"name":"base",
+			"scale":[
+				7.11929988861084,
+				1.9901974201202393,
+				16.12399673461914
+			],
+			"translation":[
+				0.5074248313903809,
+				-1.1534656286239624,
+				0.44007620215415955
+			]
 		}
 	],
 	"materials":[
@@ -37,24 +99,36 @@
 			"doubleSided":true,
 			"extensions":{
 				"KHR_materials_specular":{
-					"specularFactor":0
-				},
-				"KHR_materials_ior":{
-					"ior":1.4500000476837158
+					"specularFactor":0.24409449100494385
 				}
 			},
-			"name":"Goethe-Schiller-Denkmal_Material_u1_v1.001",
+			"name":"Goethe-Schiller-Denkmal_Material_u1_v1",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
 					"index":0
 				},
 				"metallicFactor":0
 			}
+		},
+		{
+			"doubleSided":true,
+			"extensions":{
+				"KHR_materials_specular":{
+					"specularFactor":0.4488189220428467
+				}
+			},
+			"name":"Goethe-Schiller-Denkmal_Material_u1_v1.001",
+			"pbrMetallicRoughness":{
+				"baseColorTexture":{
+					"index":1
+				},
+				"metallicFactor":0.787401556968689
+			}
 		}
 	],
 	"meshes":[
 		{
-			"name":"Goethe-Schiller-Denkmal.001",
+			"name":"Object_1",
 			"primitives":[
 				{
 					"attributes":{
@@ -68,7 +142,7 @@
 			]
 		},
 		{
-			"name":"Goethe-Schiller-Denkmal.002",
+			"name":"Object_1.001",
 			"primitives":[
 				{
 					"attributes":{
@@ -82,7 +156,7 @@
 			]
 		},
 		{
-			"name":"Goethe-Schiller-Denkmal.003",
+			"name":"Object_1.002",
 			"primitives":[
 				{
 					"attributes":{
@@ -94,12 +168,44 @@
 					"material":0
 				}
 			]
+		},
+		{
+			"name":"Object_1.003",
+			"primitives":[
+				{
+					"attributes":{
+						"POSITION":12,
+						"NORMAL":13,
+						"TEXCOORD_0":14
+					},
+					"indices":15,
+					"material":0
+				}
+			]
+		},
+		{
+			"name":"Sphere",
+			"primitives":[
+				{
+					"attributes":{
+						"POSITION":16,
+						"NORMAL":17,
+						"TEXCOORD_0":18
+					},
+					"indices":19,
+					"material":1
+				}
+			]
 		}
 	],
 	"textures":[
 		{
 			"sampler":0,
 			"source":0
+		},
+		{
+			"sampler":0,
+			"source":1
 		}
 	],
 	"images":[
@@ -107,183 +213,304 @@
 			"mimeType":"image/jpeg",
 			"name":"goethe-1k",
 			"uri":"goethe-1k.jpg"
+		},
+		{
+			"mimeType":"image/jpeg",
+			"name":"goethe-base-1k",
+			"uri":"goethe-base-1k.jpg"
 		}
 	],
 	"accessors":[
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":8492,
+			"count":9502,
 			"max":[
-				0.6136701107025146,
-				1.7650295495986938,
-				0.32979586720466614
+				3.7082955837249756,
+				9.173940658569336,
+				6.824775695800781
 			],
 			"min":[
-				-0.7744694352149963,
-				-0.013715210370719433,
-				-0.653351366519928
+				-4.898175239562988,
+				-9.542304992675781,
+				-7.894242286682129
 			],
 			"type":"VEC3"
 		},
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":8492,
+			"count":9502,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":8492,
+			"count":9502,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":21453,
+			"count":23127,
 			"type":"SCALAR"
 		},
 		{
 			"bufferView":4,
 			"componentType":5126,
-			"count":2672,
+			"count":3479,
 			"max":[
-				0.44895118474960327,
-				1.9847975969314575,
-				0.12268263101577759
+				2.00069522857666,
+				-8.489608764648438,
+				5.122038841247559
 			],
 			"min":[
-				0.2021905779838562,
-				1.670049786567688,
-				-0.13684824109077454
+				-1.5056813955307007,
+				-11.896230697631836,
+				-3.816699743270874
 			],
 			"type":"VEC3"
 		},
 		{
 			"bufferView":5,
 			"componentType":5126,
-			"count":2672,
+			"count":3479,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":6,
 			"componentType":5126,
-			"count":2672,
+			"count":3479,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":7,
 			"componentType":5123,
-			"count":10389,
+			"count":12201,
 			"type":"SCALAR"
 		},
 		{
 			"bufferView":8,
 			"componentType":5126,
-			"count":2580,
+			"count":1943,
 			"max":[
-				-0.1317276656627655,
-				1.976688027381897,
-				0.06308014690876007
+				-3.689026355743408,
+				-1.267132043838501,
+				3.642453193664551
 			],
 			"min":[
-				-0.38695475459098816,
-				1.6400973796844482,
-				-0.20495952665805817
+				-6.3388872146606445,
+				-3.9457902908325195,
+				0.9080682992935181
 			],
 			"type":"VEC3"
 		},
 		{
 			"bufferView":9,
 			"componentType":5126,
-			"count":2580,
+			"count":1943,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":10,
 			"componentType":5126,
-			"count":2580,
+			"count":1943,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":11,
 			"componentType":5123,
-			"count":10479,
+			"count":3915,
+			"type":"SCALAR"
+		},
+		{
+			"bufferView":12,
+			"componentType":5126,
+			"count":1282,
+			"max":[
+				2.247464656829834,
+				9.216048240661621,
+				5.064589977264404
+			],
+			"min":[
+				-3.5502946376800537,
+				7.683958053588867,
+				-6.542661190032959
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":13,
+			"componentType":5126,
+			"count":1282,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":14,
+			"componentType":5126,
+			"count":1282,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":15,
+			"componentType":5123,
+			"count":3105,
+			"type":"SCALAR"
+		},
+		{
+			"bufferView":16,
+			"componentType":5126,
+			"count":331,
+			"max":[
+				0.5786974430084229,
+				0.9999999403953552,
+				0.3982540965080261
+			],
+			"min":[
+				-0.5669330954551697,
+				0.20784497261047363,
+				-0.42252904176712036
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":17,
+			"componentType":5126,
+			"count":331,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":18,
+			"componentType":5126,
+			"count":331,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":19,
+			"componentType":5123,
+			"count":1002,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":101904,
+			"byteLength":114024,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":101904,
-			"byteOffset":101904,
+			"byteLength":114024,
+			"byteOffset":114024,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":67936,
-			"byteOffset":203808,
+			"byteLength":76016,
+			"byteOffset":228048,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":42906,
-			"byteOffset":271744,
+			"byteLength":46254,
+			"byteOffset":304064,
 			"target":34963
 		},
 		{
 			"buffer":0,
-			"byteLength":32064,
-			"byteOffset":314652,
+			"byteLength":41748,
+			"byteOffset":350320,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":32064,
-			"byteOffset":346716,
+			"byteLength":41748,
+			"byteOffset":392068,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":21376,
-			"byteOffset":378780,
+			"byteLength":27832,
+			"byteOffset":433816,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":20778,
-			"byteOffset":400156,
+			"byteLength":24402,
+			"byteOffset":461648,
 			"target":34963
 		},
 		{
 			"buffer":0,
-			"byteLength":30960,
-			"byteOffset":420936,
+			"byteLength":23316,
+			"byteOffset":486052,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":30960,
-			"byteOffset":451896,
+			"byteLength":23316,
+			"byteOffset":509368,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":20640,
-			"byteOffset":482856,
+			"byteLength":15544,
+			"byteOffset":532684,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":20958,
-			"byteOffset":503496,
+			"byteLength":7830,
+			"byteOffset":548228,
+			"target":34963
+		},
+		{
+			"buffer":0,
+			"byteLength":15384,
+			"byteOffset":556060,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":15384,
+			"byteOffset":571444,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":10256,
+			"byteOffset":586828,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":6210,
+			"byteOffset":597084,
+			"target":34963
+		},
+		{
+			"buffer":0,
+			"byteLength":3972,
+			"byteOffset":603296,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":3972,
+			"byteOffset":607268,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":2648,
+			"byteOffset":611240,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":2004,
+			"byteOffset":613888,
 			"target":34963
 		}
 	],
@@ -295,7 +522,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":524456,
+			"byteLength":615892,
 			"uri":"goethe.bin"
 		}
 	]
