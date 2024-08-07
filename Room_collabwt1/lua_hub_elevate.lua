@@ -1,53 +1,13 @@
-if callType == LuaCallType.Init then
-    player = api.getLocalPlayer()
-    playerOffsetY = 0.8
-    LevelContainer = player.gameObject.Find('LevelContainerEditor')
-    if debug then
-        LevelContainer = player.gameObject.Find('LevelContainer')
-    end
-	navMesh = LevelContainer.transform.GetChild(0)
-	elevation.transform.parent = navMesh.transform
-	initColliders = false
-    for i = 0, floors.transform.childCount - 1 do
-        local child = floors.transform.GetChild(i)
-        child.gameObject.SetActive(false)
-    end
-    function disableRoomColliders(transform)
-        local childCount = transform.childCount
-        for i = 0, childCount - 1 do
-            local child = transform.GetChild(i)
-            if child.name == "_EmptyCeiling(Clone)" or 
-               child.name == "_EmptyFloor(Clone)" then
-                if child.childCount > 0 then
-                    local firstSubChild = child.GetChild(0)
-                    firstSubChild.gameObject.SetActive(false)
-                end
-            end
-            if child.childCount > 0 then
-                disableRoomColliders(child)
-            end
-        end
-    end
-end
-if callType == LuaCallType.Update then
-    if not initColliders then
-		for _, start in pairs(spawn) do
-			local distance = Vector3.Distance(player.transform.position, start.transform.position)
-			if distance > 0.85 and distance < 1.1 then
-                disableRoomColliders(LevelContainer.transform)
-				initColliders = true
-				break
-			end
-		end
-	end
-    local playerY = player.transform.position.y - playerOffsetY
-    for i = 0, floors.transform.childCount - 1 do
-        local child = floors.transform.GetChild(i)
-        local yDiff = math.abs(child.transform.position.y - playerY)
-        if yDiff < 1.6 then
-            child.gameObject.SetActive(false)
-        else
-            child.gameObject.SetActive(true)
-        end
-    end
-end
+--[[
+    Author: GG3L (@GGӡL)
+    Script: Elevate 2.0
+    Description: This script adds vertical navigation functionality to custom levels in the game, allowing players to walk up and down on non-flat surfaces.
+    
+    Permission is granted to use this script in custom rooms for Escape Simulator, provided that:
+    - Credit is given to the author.
+    - Neither this header nor the code is modified.
+
+    Unauthorized distribution or modification is prohibited.
+    All rights reserved by the author.
+]]
+if callType==LuaCallType.Init then a=api.getLocalPlayer()b=0.8 function c(d)e=spawn[1]['\116\114\97\110\115\102\111\114\109']['\112\97\114\101\110\116']if d then e=d['\112\97\114\101\110\116']end if e['\110\97\109\101']=='\76\101\118\101\108\67\111\110\116\97\105\110\101\114'or e['\110\97\109\101']=='\76\101\118\101\108\67\111\110\116\97\105\110\101\114\69\100\105\116\111\114'then return spawn[1]['\103\97\109\101\79\98\106\101\99\116'].Find(e['\110\97\109\101'])else return c(e)end end f=c()g=f['\116\114\97\110\115\102\111\114\109'].GetChild(0)elevation['\116\114\97\110\115\102\111\114\109']['\112\97\114\101\110\116']=g['\116\114\97\110\115\102\111\114\109']h=false i=0 for j=0,floors['\116\114\97\110\115\102\111\114\109']['\99\104\105\108\100\67\111\117\110\116']-1 do k=floors['\116\114\97\110\115\102\111\114\109'].GetChild(j)k['\103\97\109\101\79\98\106\101\99\116'].SetActive(false)end function l(m)n=m['\99\104\105\108\100\67\111\117\110\116']for o=0,n-1 do p=m.GetChild(o)if p['\110\97\109\101']=='\95\69\109\112\116\121\67\101\105\108\105\110\103\40\67\108\111\110\101\41'or p['\110\97\109\101']=='\95\69\109\112\116\121\70\108\111\111\114\40\67\108\111\110\101\41'then if p['\99\104\105\108\100\67\111\117\110\116']>0 then q=p.GetChild(0)q['\103\97\109\101\79\98\106\101\99\116'].SetActive(false)end end if p['\99\104\105\108\100\67\111\117\110\116']>0 then l(p)end end end end if callType==LuaCallType.Update then if not h then i=0 for _,r in pairs(spawn)do s=Vector3.Distance(a['\116\114\97\110\115\102\111\114\109']['\112\111\115\105\116\105\111\110'],r['\116\114\97\110\115\102\111\114\109']['\112\111\115\105\116\105\111\110'])if s>1 then i=i+1 end end if i==#spawn then l(f['\116\114\97\110\115\102\111\114\109'])h=true end end t=a['\116\114\97\110\115\102\111\114\109']['\112\111\115\105\116\105\111\110'].y-b for j=0,floors['\116\114\97\110\115\102\111\114\109']['\99\104\105\108\100\67\111\117\110\116']-1 do k=floors['\116\114\97\110\115\102\111\114\109'].GetChild(j)u=math.abs(k['\116\114\97\110\115\102\111\114\109']['\112\111\115\105\116\105\111\110'].y-t)if u<1.6 then k['\103\97\109\101\79\98\106\101\99\116'].SetActive(false)else k['\103\97\109\101\79\98\106\101\99\116'].SetActive(true)end end end

@@ -1,10 +1,1 @@
-if callType == LuaCallType.Init then
-    camera = transform.gameObject.FindGameObjectWithTag('MainCamera')
-end
-if callType == LuaCallType.Update then
-    for _, f3d in pairs(fake3d) do
-        local direction = camera.transform.position - f3d.transform.position
-        direction.y = 0
-        f3d.transform.rotation = Quaternion.LookRotation(direction)
-    end
-end
+if callType==LuaCallType.Init then a=transform['\103\97\109\101\79\98\106\101\99\116'].FindGameObjectWithTag('\77\97\105\110\67\97\109\101\114\97')end if callType==LuaCallType.Update then for _,b in pairs(fake3d)do local c=a['\116\114\97\110\115\102\111\114\109']['\112\111\115\105\116\105\111\110']-b['\116\114\97\110\115\102\111\114\109']['\112\111\115\105\116\105\111\110']c.y=0 b['\116\114\97\110\115\102\111\114\109']['\114\111\116\97\116\105\111\110']=Quaternion.LookRotation(c)end end
