@@ -3,6 +3,9 @@
 		"generator":"Khronos glTF Blender I/O v4.2.57",
 		"version":"2.0"
 	},
+	"extensionsUsed":[
+		"KHR_materials_specular"
+	],
 	"scene":0,
 	"scenes":[
 		{
@@ -15,38 +18,24 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"Closed_NewsPaper1",
-			"rotation":[
-				0.7071068286895752,
-				0,
-				0,
-				0.7071068286895752
-			],
-			"scale":[
-				0.18344174325466156,
-				0.28331637382507324,
-				0.007265283726155758
-			],
-			"translation":[
-				0.006433375179767609,
-				0.005181428045034409,
-				0
-			]
+			"name":"Closed_NewsPaper1"
 		}
 	],
 	"materials":[
 		{
 			"doubleSided":true,
-			"name":"Newspaper_Texture",
-			"normalTexture":{
-				"index":0
+			"extensions":{
+				"KHR_materials_specular":{
+					"specularFactor":0
+				}
 			},
+			"name":"Newspaper_Texture",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
-					"index":1
+					"index":0
 				},
 				"metallicFactor":0,
-				"roughnessFactor":0.5527864098548889
+				"roughnessFactor":0.75
 			}
 		}
 	],
@@ -70,51 +59,42 @@
 		{
 			"sampler":0,
 			"source":0
-		},
-		{
-			"sampler":0,
-			"source":1
 		}
 	],
 	"images":[
 		{
 			"mimeType":"image/png",
-			"name":"tx_brush_Paper003Normal",
-			"uri":"tx_brush_Paper003Normal.png"
-		},
-		{
-			"mimeType":"image/png",
-			"name":"tx_brush_newspaper",
-			"uri":"tx_brush_newspaper.png"
+			"name":"tx_hub_newspaper",
+			"uri":"tx_hub_newspaper.png"
 		}
 	],
 	"accessors":[
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":1168,
+			"count":706,
 			"max":[
-				0.5104159116744995,
-				0.4391668736934662,
-				1.001814842224121
+				0.17896513640880585,
+				0.21799986064434052,
+				-0.007189929485321045
 			],
 			"min":[
-				-0.537608802318573,
-				-0.4510466456413269,
-				-0.49462321400642395
+				-0.17529018223285675,
+				-0.24674299359321594,
+				-0.027223482728004456
 			],
 			"type":"VEC3"
 		},
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":1168,
+			"count":706,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":1168,
+			"count":706,
 			"type":"VEC2"
 		},
 		{
@@ -127,26 +107,26 @@
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":14016,
+			"byteLength":8472,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":14016,
-			"byteOffset":14016,
+			"byteLength":8472,
+			"byteOffset":8472,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":9344,
-			"byteOffset":28032,
+			"byteLength":5648,
+			"byteOffset":16944,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":8160,
-			"byteOffset":37376,
+			"byteOffset":22592,
 			"target":34963
 		}
 	],
@@ -158,7 +138,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":45536,
+			"byteLength":30752,
 			"uri":"mdl_brush_newspaper.bin"
 		}
 	]
