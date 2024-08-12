@@ -88,7 +88,8 @@ if callType == LuaCallType.Init then
 			['var_italy_arrow'] = 'Arrow Lock',
 			['var_thai_chestlid'] = 'Chest Lid',
 			['passport'] = 'Passport',
-			['book[1]'] = 'Minoan History'
+			['book[1]'] = 'Minoan History',
+			['var_italy_note'] = 'Note'
 		},
 		[2] = { -- French
 			['fakeTravel[1]'] = 'Voyager',
@@ -177,7 +178,8 @@ if callType == LuaCallType.Init then
 			['var_italy_arrow'] = 'Serrure à flèche',
 			['var_thai_chestlid'] = 'Couvercle de coffre',
 			['passport'] = 'Passeport',
-			['book[1]'] = 'Histoire minoenne'
+			['book[1]'] = 'Histoire minoenne',
+			['var_italy_note'] = 'Note'
 		},
 		[3] = { -- German
 			['fakeTravel[1]'] = 'Reisen',
@@ -266,7 +268,8 @@ if callType == LuaCallType.Init then
 			['var_italy_arrow'] = 'Pfeilschloss',
 			['var_thai_chestlid'] = 'Truhendeckel',
 			['passport'] = 'Reisepass',
-			['book[1]'] = 'Minoische Geschichte'
+			['book[1]'] = 'Minoische Geschichte',
+			['var_italy_note'] = 'Notiz'
 		},
 		[4] = { -- Italian
 			['fakeTravel[1]'] = 'Viaggiare',
@@ -355,7 +358,8 @@ if callType == LuaCallType.Init then
 			['var_italy_arrow'] = 'Serratura a freccia',
 			['var_thai_chestlid'] = 'Coperchio del baule',
 			['passport'] = 'Passaporto',
-			['book[1]'] = 'Storia minoica'
+			['book[1]'] = 'Storia minoica',
+			['var_italy_note'] = 'Nota'
 		},
 		[5] = { -- Spanish
 			['fakeTravel[1]'] = 'Viajar',
@@ -444,7 +448,8 @@ if callType == LuaCallType.Init then
 			['var_italy_arrow'] = 'Cerradura de flecha',
 			['var_thai_chestlid'] = 'Tapa del cofre',
 			['passport'] = 'Pasaporte',
-			['book[1]'] = 'Historia minoica'
+			['book[1]'] = 'Historia minoica',
+			['var_italy_note'] = 'Nota'
 		},
 		[6] = { -- Portuguese
 			['fakeTravel[1]'] = 'Viajar',
@@ -533,7 +538,8 @@ if callType == LuaCallType.Init then
 			['var_italy_arrow'] = 'Fechadura de flecha',
 			['var_thai_chestlid'] = 'Tampa do baú',
 			['passport'] = 'Passaporte',
-			['book[1]'] = 'História minoica'
+			['book[1]'] = 'História minoica',
+			['var_italy_note'] = 'Nota'
 		},
 		[7] = { -- Turkish
 			['fakeTravel[1]'] = 'Seyahat etmek',
@@ -622,7 +628,8 @@ if callType == LuaCallType.Init then
 			['var_italy_arrow'] = 'Ok Kilidi',
 			['var_thai_chestlid'] = 'Sandık kapağı',
 			['passport'] = 'Pasaport',
-			['book[1]'] = 'Minos Tarihi'
+			['book[1]'] = 'Minos Tarihi',
+			['var_italy_note'] = 'Not'
 		},
 		[8] = { -- Chinese
 			['fakeTravel[1]'] = '旅行',
@@ -711,7 +718,8 @@ if callType == LuaCallType.Init then
 			['var_italy_arrow'] = '箭锁',
 			['var_thai_chestlid'] = '箱盖',
 			['passport'] = '护照',
-			['book[1]'] = '米诺斯历史'
+			['book[1]'] = '米诺斯历史',
+			['var_italy_note'] = '笔记'
 		},
 		[9] = { -- Japanese
 			['fakeTravel[1]'] = '旅行する',
@@ -800,7 +808,8 @@ if callType == LuaCallType.Init then
 			['var_italy_arrow'] = '矢印錠',
 			['var_thai_chestlid'] = 'ふた',
 			['passport'] = 'パスポート',
-			['book[1]'] = 'ミノアの歴史'
+			['book[1]'] = 'ミノアの歴史',
+			['var_italy_note'] = 'メモ'
 		},
 		[10] = { -- Korean
 			['fakeTravel[1]'] = '여행하다',
@@ -889,7 +898,8 @@ if callType == LuaCallType.Init then
 			['var_italy_arrow'] = '화살표 자물쇠',
 			['var_thai_chestlid'] = '상자 뚜껑',
 			['passport'] = '여권',
-			['book[1]'] = '미노아 역사'
+			['book[1]'] = '미노아 역사',
+			['var_italy_note'] = '메모'
 		}
 	}
 	function getIndex(context)
