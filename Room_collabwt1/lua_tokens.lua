@@ -1,1 +1,159 @@
-if callType==LuaCallType.Init then a={}for b,c in pairs(token)do d=c['\103\97\109\101\79\98\106\101\99\116'].GetComponent('\69\108\101\109\101\110\116')d['\99\111\108\108\101\99\116\105\111\110\73\100']=1350 e=tonumber(d['\101\108\101\109\101\110\116\78\97\109\101'])c['\116\114\97\110\115\102\111\114\109']['\110\97\109\101']=e d['\101\108\101\109\101\110\116\78\97\109\101']=''if not a[e]then a[e]={f=0,g=1}else a[e].g=a[e].g+1 end end function h(i)local j=i['\103\97\109\101\79\98\106\101\99\116'].GetComponent('\69\108\101\109\101\110\116')local k=string.match(j['\112\108\97\121\101\114\86\97\114\105\97\98\108\101\78\97\109\101'],"{(%d+)}")return tonumber(k)end function l(m)m['\103\97\109\101\79\98\106\101\99\116'].SetActive(false)n=tonumber(m['\116\114\97\110\115\102\111\114\109']['\110\97\109\101'])a[n].f=a[n].f+1 if a[n].f==a[n].g then api['\108\101\118\101\108\78\111\116\101']('\65\108\108\32\116\111\107\101\110\115\32\102\111\117\110\100\33\n\67\111\110\103\114\97\116\117\108\97\116\105\111\110\115\44\32\121\111\117\32\102\111\117\110\100\32\97\108\108\32\116\104\101\32\116\111\107\101\110\115\32\105\110\32\116\104\105\115\32\97\114\101\97\33\n'..string.char(9688)..'\32'..a[n].f..'/'..a[n].g)else api['\108\101\118\101\108\78\111\116\101']('\84\111\107\101\110\32\102\111\117\110\100\33\n\89\111\117\32\102\111\117\110\100\32\97\32\115\101\99\114\101\116\32\116\111\107\101\110\33\32\76\111\111\107\32\97\114\111\117\110\100\32\116\111\32\102\105\110\100\32\109\111\114\101\32\105\110\32\116\104\105\115\32\97\114\101\97\33\n'..string.char(9688)..'\32'..a[n].f..'/'..a[n].g)end o=0 p=0 for _,q in pairs(a)do o=o+q.f p=p+q.g end if o==p then if n==1 then api['\108\101\118\101\108\78\111\116\101'](string.char(0x24D8)..'\32\65\32\83\101\99\114\101\116\32\114\111\111\109\32\104\97\115\32\98\101\101\110\32\117\110\108\111\99\107\101\100\33')else api['\108\101\118\101\108\78\111\116\101'](string.char(0x24D8)..'\32\65\32\83\101\99\114\101\116\32\114\111\111\109\32\104\97\115\32\98\101\101\110\32\117\110\108\111\99\107\101\100\46\32\72\101\97\100\32\98\97\99\107\32\104\111\109\101\32\116\111\32\100\105\115\99\111\118\101\114\32\119\104\97\116\32\97\119\97\105\116\115\32\121\111\117\33')end api['\115\101\116\76\111\99\107\86\97\108\117\101'](zesty_tokendoor_unlock,1,1)end r=h(m)api['\115\101\116\76\111\99\107\86\97\108\117\101'](_G['zesty_tokendoor_display'..r],1,1)end function s(t)u=t['\103\97\109\101\79\98\106\101\99\116'].GetComponent('\69\108\101\109\101\110\116')v=tonumber(u['\101\108\101\109\101\110\116\78\97\109\101'])if a[v].f==a[v].g then api['\108\101\118\101\108\78\111\116\101']('\65\108\108\32\116\111\107\101\110\115\32\104\97\118\101\32\98\101\101\110\32\102\111\117\110\100\32\105\110\32\116\104\105\115\32\97\114\101\97\33\n'..string.char(9688)..'\32'..a[v].f..'/'..a[v].g)else api['\108\101\118\101\108\78\111\116\101']('\84\104\101\114\101\32\97\114\101\32\115\116\105\108\108\32\116\111\107\101\110\115\32\116\111\32\98\101\32\102\111\117\110\100\32\105\110\32\116\104\105\115\32\97\114\101\97\46\n'..string.char(9688)..'\32'..a[v].f..'/'..a[v].g)end end end if callType==LuaCallType.SwitchDone then if api.contains(token,context)and context['\105\115\79\110']then l(context)end if api.contains(tokenArea,context)and context['\105\115\79\110']then s(context)end end if callType==LuaCallType.TriggerExit then if api.contains(tokenTrigger,context)then l(context)end end
+if callType == LuaCallType.Init then
+    langIndex = 1
+    language = {
+        [1] = { -- English
+            [1] = 'All tokens found!\nCongratulations, you found all the tokens in this area!',
+            [2] = 'Token found!\nYou found a secret token! Look around to find more in this area!',
+            [3] = 'A Secret room has been unlocked!',
+            [4] = 'A Secret room has been unlocked. Head back home to discover what awaits you!',
+            [5] = 'All tokens have been found in this area!',
+            [6] = 'There are still tokens to be found in this area.'
+        },
+        [2] = { -- French
+            [1] = 'Tous les jetons trouvés !\nFélicitations, vous avez trouvé tous les jetons dans cette zone !',
+            [2] = "Jeton trouvé !\nVous avez trouvé un jeton secret ! Regardez autour de vous pour en trouver d'autres dans cette zone !",
+            [3] = 'Une pièce secrète a été déverrouillée !',
+            [4] = 'Une pièce secrète a été déverrouillée. Retournez chez vous pour découvrir ce qui vous attend !',
+            [5] = 'Tous les jetons ont été trouvés dans cette zone !',
+            [6] = 'Il reste encore des jetons à trouver dans cette zone.'
+        },
+        [3] = { -- German
+            [1] = 'Alle Token gefunden!\nHerzlichen Glückwunsch, Sie haben alle Token in diesem Bereich gefunden!',
+            [2] = 'Token gefunden!\nSie haben einen geheimen Token gefunden! Schauen Sie sich um, um weitere in diesem Bereich zu finden!',
+            [3] = 'Ein geheimer Raum wurde freigeschaltet!',
+            [4] = 'Ein geheimer Raum wurde freigeschaltet. Gehen Sie nach Hause, um zu entdecken, was Sie erwartet!',
+            [5] = 'Alle Token wurden in diesem Bereich gefunden!',
+            [6] = 'In diesem Bereich gibt es noch Token zu finden.'
+        },
+        [4] = { -- Italian
+            [1] = "Tutti i token trovati!\nCongratulazioni, hai trovato tutti i token in quest'area!",
+            [2] = "Token trovato!\nHai trovato un token segreto! Guardati intorno per trovarne altri in quest'area!",
+            [3] = 'Una stanza segreta è stata sbloccata!',
+            [4] = 'Una stanza segreta è stata sbloccata. Torna a casa per scoprire cosa ti aspetta!',
+            [5] = "Tutti i token sono stati trovati in quest'area!",
+            [6] = "Ci sono ancora token da trovare in quest'area."
+        },
+        [5] = { -- Spanish
+            [1] = '¡Todos los tokens encontrados!\n¡Felicidades, has encontrado todos los tokens en esta área!',
+            [2] = '¡Token encontrado!\n¡Has encontrado un token secreto! ¡Mira a tu alrededor para encontrar más en esta área!',
+            [3] = '¡Se ha desbloqueado una sala secreta!',
+            [4] = 'Se ha desbloqueado una sala secreta. ¡Regresa a casa para descubrir lo que te espera!',
+            [5] = '¡Todos los tokens han sido encontrados en esta área!',
+            [6] = 'Aún quedan tokens por encontrar en esta área.'
+        },
+        [6] = { -- Portuguese
+            [1] = 'Todos os tokens encontrados!\nParabéns, você encontrou todos os tokens nesta área!',
+            [2] = 'Token encontrado!\nVocê encontrou um token secreto! Olhe ao redor para encontrar mais nesta área!',
+            [3] = 'Uma sala secreta foi desbloqueada!',
+            [4] = 'Uma sala secreta foi desbloqueada. Volte para casa para descobrir o que te espera!',
+            [5] = 'Todos os tokens foram encontrados nesta área!',
+            [6] = 'Ainda há tokens para serem encontrados nesta área.'
+        },
+        [7] = { -- Turkish
+            [1] = 'Tüm jetonlar bulundu!\nTebrikler, bu alandaki tüm jetonları buldunuz!',
+            [2] = 'Jeton bulundu!\nGizli bir jeton buldunuz! Bu alanda daha fazlasını bulmak için etrafa bakın!',
+            [3] = 'Gizli bir oda açıldı!',
+            [4] = 'Gizli bir oda açıldı. Seni bekleyenleri keşfetmek için eve dön!',
+            [5] = 'Bu alandaki tüm jetonlar bulundu!',
+            [6] = 'Bu alanda hala bulunması gereken jetonlar var.'
+        },
+        [8] = { -- Chinese
+            [1] = '所有代币已找到！\n恭喜，您找到了此区域的所有代币！',
+            [2] = '代币已找到！\n你发现了一个秘密代币！四处看看，在此区域内找到更多代币！',
+            [3] = '秘密房间已解锁！',
+            [4] = '秘密房间已解锁。回家看看有什么在等着你吧！',
+            [5] = '此区域的所有代币已找到！',
+            [6] = '此区域还有代币尚未找到。'
+        },
+        [9] = { -- Japanese
+            [1] = 'すべてのトークンが見つかりました！\nおめでとうございます、このエリアですべてのトークンを見つけました！',
+            [2] = 'トークンが見つかりました！\n秘密のトークンを見つけました！このエリアでもっと探してみてください！',
+            [3] = '秘密の部屋が解除されました！',
+            [4] = '秘密の部屋が解除されました。家に帰って何が待っているのかを発見してください！',
+            [5] = 'このエリアですべてのトークンが見つかりました！',
+            [6] = 'このエリアにはまだ見つかるトークンがあります。'
+        },
+        [10] = { -- Korean
+            [1] = '모든 토큰을 찾았습니다!\n축하합니다, 이 지역에서 모든 토큰을 찾았습니다!',
+            [2] = '토큰을 찾았습니다!\n비밀 토큰을 찾았습니다! 이 지역에서 더 찾아보세요!',
+            [3] = '비밀 방이 열렸습니다!',
+            [4] = '비밀 방이 열렸습니다. 당신을 기다리는 것이 무엇인지 알아보려면 집으로 돌아가세요!',
+            [5] = '이 지역에서 모든 토큰을 찾았습니다!',
+            [6] = '이 지역에서 아직 찾을 토큰이 남아 있습니다.'
+        }
+	}
+    areas = {}
+    for i, tk in pairs(token) do
+        element = tk.gameObject.GetComponent('Element')
+        element.collectionId = 1350
+        zone = tonumber(element.elementName)
+        tk.transform.name = zone
+        element.elementName = ''
+        if not areas[zone] then
+            areas[zone] = {
+                found = 0,
+                total = 1
+            }
+        else
+            areas[zone].total = areas[zone].total + 1
+        end
+    end
+    function getIndex(context)
+        local element = context.gameObject.GetComponent('Element')
+        local index = string.match(element.playerVariableName, "{(%d+)}")
+        return tonumber(index)
+    end
+    function collectToken(context)
+		context.gameObject.SetActive(false)
+        zone = tonumber(context.transform.name)
+        areas[zone].found = areas[zone].found + 1
+        if areas[zone].found == areas[zone].total then
+            api.levelNote(language[langIndex][1]..'\n'..string.char(9688)..' '..areas[zone].found..'/'..areas[zone].total)
+        else
+            api.levelNote(language[langIndex][2]..'\n'..string.char(9688)..' '..areas[zone].found..'/'..areas[zone].total)
+        end
+        found = 0
+        total = 0
+        for _, a in pairs(areas) do
+            found = found + a.found
+            total = total + a.total
+        end
+        if found == total then
+            if zone == 1 then
+                api.levelNote(string.char(0x24D8)..' '..language[langIndex][3])
+            else
+                api.levelNote(string.char(0x24D8)..' '..language[langIndex][4])
+            end
+            api.setLockValue(zesty_tokendoor_unlock, 1, 1)
+        else
+            index = getIndex(context)
+            api.setLockValue(_G['zesty_tokendoor_display'..index], 1, 1)
+        end
+	end
+    function tokenStatus(context)
+        element = context.gameObject.GetComponent('Element')
+        zone = tonumber(element.elementName)
+        if areas[zone].found == areas[zone].total then
+            api.levelNote(language[langIndex][5]..'\n'..string.char(9688)..' '..areas[zone].found..'/'..areas[zone].total)
+        else
+            api.levelNote(language[langIndex][6]..'\n'..string.char(9688)..' '..areas[zone].found..'/'..areas[zone].total)
+        end
+    end
+end
+if callType == LuaCallType.SwitchDone then
+	if api.contains(token, context) and context.isOn then
+		collectToken(context)
+	end
+    if api.contains(tokenArea, context) and context.isOn then
+		tokenStatus(context)
+	end
+    if api.contains(selectLanguage, context) and context.isOn then
+		local index = getIndex(context)
+		langIndex = index
+	end
+end
+if callType == LuaCallType.TriggerExit then
+	if api.contains(tokenTrigger, context) then
+		collectToken(context)
+	end
+end

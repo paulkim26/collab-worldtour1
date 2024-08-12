@@ -1,6 +1,6 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.2.57",
+		"generator":"Khronos glTF Blender I/O v4.0.44",
 		"version":"2.0"
 	},
 	"extensionsUsed":[
@@ -18,7 +18,7 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"newspaper_1"
+			"name":"Newspaper"
 		}
 	],
 	"materials":[
@@ -44,7 +44,7 @@
 	],
 	"meshes":[
 		{
-			"name":"Mesh",
+			"name":"Mesh.001",
 			"primitives":[
 				{
 					"attributes":{
@@ -84,61 +84,61 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":1641,
+			"count":573,
 			"max":[
-				1.1052366495132446,
-				0.6300278902053833,
-				0.9490431547164917
+				0.13225620985031128,
+				0.010315366089344025,
+				0.0738956406712532
 			],
 			"min":[
-				-1.0879658460617065,
-				-0.1037263348698616,
-				-0.9582515954971313
+				-0.12824326753616333,
+				-0.00029664597241207957,
+				-0.10798950493335724
 			],
 			"type":"VEC3"
 		},
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":1641,
+			"count":573,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":1641,
+			"count":573,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":3243,
+			"count":1056,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":19692,
+			"byteLength":6876,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":19692,
-			"byteOffset":19692,
+			"byteLength":6876,
+			"byteOffset":6876,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":13128,
-			"byteOffset":39384,
+			"byteLength":4584,
+			"byteOffset":13752,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":6486,
-			"byteOffset":52512,
+			"byteLength":2112,
+			"byteOffset":18336,
 			"target":34963
 		}
 	],
@@ -150,7 +150,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":59000,
+			"byteLength":20448,
 			"uri":"mdl_brush_newsstack.bin"
 		}
 	]
