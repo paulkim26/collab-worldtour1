@@ -36,7 +36,9 @@ if callType == LuaCallType.SwitchDone then
 		end
 	end
 	if api.contains(fakeTravel, context) and context.isOn then
-		api.levelNote(string.char(0x24D8)..' '..language[langIndex])
+		if api.getLocalPlayer() ~= api.getMainPlayer() then
+			api.levelNote(string.char(0x24D8)..' '..language[langIndex])
+		end
 	end
 	if api.contains(selectLanguage, context) and context.isOn then
 		local index = getIndex(context)
