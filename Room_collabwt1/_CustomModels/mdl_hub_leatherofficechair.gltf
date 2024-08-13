@@ -1,6 +1,6 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.1.62",
+		"generator":"Khronos glTF Blender I/O v4.2.57",
 		"version":"2.0"
 	},
 	"extensionsUsed":[
@@ -27,7 +27,7 @@
 			],
 			"scale":[
 				100.00000762939453,
-				100.00001525878906,
+				100.0000228881836,
 				100
 			],
 			"translation":[
@@ -46,11 +46,11 @@
 			],
 			"scale":[
 				8.817643165588379,
-				8.817638397216797,
-				2.817641258239746
+				8.81763744354248,
+				2.817641019821167
 			],
 			"translation":[
-				0.8395434021949768,
+				0.839543342590332,
 				20.75255012512207,
 				78.73443603515625
 			]
@@ -64,9 +64,9 @@
 				0.7071066498756409
 			],
 			"scale":[
-				119.50019073486328,
-				99.5001449584961,
-				24.410058975219727
+				119.50018310546875,
+				99.50013732910156,
+				24.410057067871094
 			],
 			"translation":[
 				0,
@@ -79,7 +79,7 @@
 			"rotation":[
 				-0.6603619456291199,
 				-0.2528282403945923,
-				-0.2528282105922699,
+				-0.2528281807899475,
 				0.6603619456291199
 			],
 			"scale":[
@@ -110,8 +110,8 @@
 			],
 			"scale":[
 				9.984481811523438,
-				4.415335178375244,
-				16.876760482788086
+				4.415334701538086,
+				16.876758575439453
 			],
 			"translation":[
 				-132.6259307861328,
@@ -129,11 +129,11 @@
 			],
 			"scale":[
 				9.692595481872559,
-				9.692590713500977,
-				7.692592620849609
+				9.69258975982666,
+				7.692591667175293
 			],
 			"translation":[
-				-117.25286865234375,
+				-117.25286102294922,
 				-229.7302703857422,
 				-52.29279708862305
 			]
@@ -162,8 +162,8 @@
 			],
 			"scale":[
 				0.009999999776482582,
-				0.009999997913837433,
-				0.009999997913837433
+				0.009999996982514858,
+				0.009999996982514858
 			]
 		},
 		{
@@ -254,15 +254,14 @@
 			},
 			"name":"Leather_Seating.003",
 			"normalTexture":{
-				"index":6,
-				"scale":1.6999999284744263
+				"index":6
 			},
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
 					"index":7
 				},
-				"metallicFactor":0.05000000074505806,
-				"roughnessFactor":0.5
+				"metallicFactor":0,
+				"roughnessFactor":0.7666666507720947
 			}
 		},
 		{
@@ -279,15 +278,14 @@
 			},
 			"name":"Leather_Top.003",
 			"normalTexture":{
-				"index":8,
-				"scale":2.3999998569488525
+				"index":8
 			},
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
 					"index":9
 				},
-				"metallicFactor":0.05000000074505806,
-				"roughnessFactor":0.5
+				"metallicFactor":0,
+				"roughnessFactor":0.8015873432159424
 			}
 		},
 		{
@@ -454,18 +452,18 @@
 		},
 		{
 			"mimeType":"image/png",
-			"name":"tx_hub_leatherofficechairNormal1",
-			"uri":"tx_hub_leatherofficechairNormal1.png"
-		},
-		{
-			"mimeType":"image/png",
 			"name":"tx_hub_leatherofficechairColor1",
 			"uri":"tx_hub_leatherofficechairColor1.png"
 		},
 		{
 			"mimeType":"image/png",
-			"name":"tx_hub_leatherofficechairNormal2",
-			"uri":"tx_hub_leatherofficechairNormal2.png"
+			"name":"tx_hub_leatherofficechairColor1",
+			"uri":"tx_hub_leatherofficechairColor1-1.png"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"tx_brush_deskchairtopnormal",
+			"uri":"tx_brush_deskchairtopnormal.png"
 		},
 		{
 			"mimeType":"image/png",

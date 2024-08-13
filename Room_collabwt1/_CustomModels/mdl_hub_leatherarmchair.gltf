@@ -1,6 +1,6 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.1.62",
+		"generator":"Khronos glTF Blender I/O v4.2.57",
 		"version":"2.0"
 	},
 	"extensionsUsed":[
@@ -33,8 +33,8 @@
 			],
 			"scale":[
 				100,
-				99.9999771118164,
-				99.9999771118164
+				99.99996948242188,
+				99.99996948242188
 			]
 		},
 		{
@@ -73,16 +73,19 @@
 			"doubleSided":true,
 			"extensions":{
 				"KHR_materials_specular":{
-					"specularFactor":0.10000000149011612
+					"specularFactor":0
 				}
 			},
 			"name":"Material.100",
+			"normalTexture":{
+				"index":0
+			},
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
-					"index":0
+					"index":1
 				},
 				"metallicFactor":0,
-				"roughnessFactor":0.7954549789428711
+				"roughnessFactor":0.7637089490890503
 			}
 		},
 		{
@@ -100,7 +103,7 @@
 			"name":"Material.101",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
-					"index":1
+					"index":2
 				},
 				"metallicFactor":0,
 				"roughnessFactor":0.831818163394928
@@ -140,9 +143,18 @@
 		{
 			"sampler":0,
 			"source":1
+		},
+		{
+			"sampler":0,
+			"source":2
 		}
 	],
 	"images":[
+		{
+			"mimeType":"image/png",
+			"name":"tx_brush_armchairnormal",
+			"uri":"tx_brush_armchairnormal.png"
+		},
 		{
 			"mimeType":"image/png",
 			"name":"tx_hub_leatherarmchairColor",
