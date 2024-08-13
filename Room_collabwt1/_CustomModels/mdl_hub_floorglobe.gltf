@@ -1,6 +1,6 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.1.62",
+		"generator":"Khronos glTF Blender I/O v4.2.57",
 		"version":"2.0"
 	},
 	"extensionsUsed":[
@@ -33,8 +33,8 @@
 			],
 			"scale":[
 				100,
-				99.9999771118164,
-				99.9999771118164
+				99.99999237060547,
+				99.99999237060547
 			]
 		},
 		{
@@ -70,22 +70,23 @@
 					"specularFactor":0
 				}
 			},
-			"name":"material.009",
+			"name":"material",
 			"normalTexture":{
-				"index":0
+				"index":0,
+				"scale":1.0000001192092896
 			},
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
 					"index":1
 				},
 				"metallicFactor":0,
-				"roughnessFactor":0.7863636016845703
+				"roughnessFactor":0.7412698268890381
 			}
 		}
 	],
 	"meshes":[
 		{
-			"name":"defaultMaterial.025",
+			"name":"defaultMaterial",
 			"primitives":[
 				{
 					"attributes":{
@@ -106,10 +107,15 @@
 		},
 		{
 			"sampler":0,
-			"source":0
+			"source":1
 		}
 	],
 	"images":[
+		{
+			"mimeType":"image/png",
+			"name":"tx_hub_floorglobenormal",
+			"uri":"tx_hub_floorglobenormal.png"
+		},
 		{
 			"mimeType":"image/jpeg",
 			"name":"tx_hub_floorglobeColor",
@@ -120,61 +126,61 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":8608,
+			"count":18728,
 			"max":[
 				0.3960219919681549,
 				0.3968049883842468,
-				1.3793751001358032
+				1.3792270421981812
 			],
 			"min":[
 				-0.3960219919681549,
 				-0.3968049883842468,
-				-0.0030441954731941223
+				-0.002920999890193343
 			],
 			"type":"VEC3"
 		},
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":8608,
+			"count":18728,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":8608,
+			"count":18728,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":20355,
+			"count":82713,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":103296,
+			"byteLength":224736,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":103296,
-			"byteOffset":103296,
+			"byteLength":224736,
+			"byteOffset":224736,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":68864,
-			"byteOffset":206592,
+			"byteLength":149824,
+			"byteOffset":449472,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":40710,
-			"byteOffset":275456,
+			"byteLength":165426,
+			"byteOffset":599296,
 			"target":34963
 		}
 	],
@@ -186,7 +192,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":316168,
+			"byteLength":764724,
 			"uri":"mdl_hub_floorglobe.bin"
 		}
 	]
