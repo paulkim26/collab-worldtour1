@@ -1959,13 +1959,13 @@
 		},
 		{
 			"mimeType":"image/png",
-			"name":"Grass002_2K-PNG_NormalGL",
-			"uri":"Grass002_2K-PNG_NormalGL.png"
+			"name":"tx_brush_Grass002_2K-PNG_NormalGL",
+			"uri":"tx_brush_Grass002_2K-PNG_NormalGL.png"
 		},
 		{
 			"mimeType":"image/png",
-			"name":"Grass002_2K-PNG_Color",
-			"uri":"Grass002_2K-PNG_Color.png"
+			"name":"tx_brush_Grass002_2K-PNG_Color",
+			"uri":"tx_brush_Grass002_2K-PNG_Color.png"
 		}
 	],
 	"accessors":[
@@ -2672,12 +2672,12 @@
 			"max":[
 				-3.387270212173462,
 				7.103285312652588,
-				2.9561195373535156
+				2.9766530990600586
 			],
 			"min":[
 				-5.851227283477783,
 				6.930938243865967,
-				2.6801633834838867
+				2.6556451320648193
 			],
 			"type":"VEC3"
 		},
@@ -2706,12 +2706,12 @@
 			"max":[
 				5.813112258911133,
 				7.103285312652588,
-				2.9829702377319336
+				3.007887363433838
 			],
 			"min":[
 				-1.7936301231384277,
 				6.930938243865967,
-				2.7070140838623047
+				2.6868793964385986
 			],
 			"type":"VEC3"
 		},
