@@ -97,6 +97,11 @@ if callType == LuaCallType.Init then
 	initCharacterModels()
 end
 if callType == LuaCallType.SwitchDone then
+	if context == toggleUI[1] then
+		toggleCharacterModels(false)
+	end
+end
+if callType == LuaCallType.SwitchDone then
 	if api.contains(selectLanguage, context) and context.isOn then
 		local index = getIndex(context)
 		local sbElem = soundButton.gameObject.GetComponent('Element')
@@ -111,6 +116,9 @@ if callType == LuaCallType.SwitchDone then
 		pbElem.elementName = language[index].startButton
 	end
 	if context == toggleCM then
+		toggleCharacterModels(true)
+	end
+	if context == toggleUI[1] then
 		toggleCharacterModels(true)
 	end
 end
