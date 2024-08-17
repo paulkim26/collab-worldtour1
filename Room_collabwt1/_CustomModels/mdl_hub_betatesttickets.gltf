@@ -24,6 +24,11 @@
 	"materials":[
 		{
 			"doubleSided":true,
+			"emissiveFactor":[
+				0.019999999552965164,
+				0.019999999552965164,
+				0.019999999552965164
+			],
 			"extensions":{
 				"KHR_materials_specular":{
 					"specularFactor":0
@@ -35,7 +40,7 @@
 					"index":0
 				},
 				"metallicFactor":0,
-				"roughnessFactor":0
+				"roughnessFactor":0.9841269850730896
 			}
 		}
 	],
@@ -72,11 +77,11 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":32,
+			"count":28,
 			"max":[
-				0.42775416374206543,
+				0.41242074966430664,
 				0.025906650349497795,
-				0.22541074454784393
+				0.2294347882270813
 			],
 			"min":[
 				-0.07698029279708862,
@@ -88,45 +93,45 @@
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":32,
+			"count":28,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":32,
+			"count":28,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":48,
+			"count":42,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":384,
+			"byteLength":336,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":384,
-			"byteOffset":384,
+			"byteLength":336,
+			"byteOffset":336,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":256,
-			"byteOffset":768,
+			"byteLength":224,
+			"byteOffset":672,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":96,
-			"byteOffset":1024,
+			"byteLength":84,
+			"byteOffset":896,
 			"target":34963
 		}
 	],
@@ -138,7 +143,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":1120,
+			"byteLength":980,
 			"uri":"mdl_hub_betatesttickets.bin"
 		}
 	]
