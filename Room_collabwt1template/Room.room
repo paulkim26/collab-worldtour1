@@ -1,0 +1,3295 @@
+{
+    "name": "The Collab: World Tour - Module + Elevation",
+    "description": "See Escape Collaborators Discord server #module-guidelines channel for more information.",
+    "pointVersion": 33157,
+    "tags": [
+        "tagVersusCompatible"
+    ],
+    "walkthrough": [],
+    "cameraScreenshotPosition": {
+        "x": 0.0,
+        "y": 1.7000000476837159,
+        "z": -0.699999988079071
+    },
+    "cameraScreenshotRotation": {
+        "x": 45.000003814697269,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "cameraEditPosition": {
+        "x": -0.5769628882408142,
+        "y": 1.7361148595809937,
+        "z": 0.5240283012390137
+    },
+    "cameraEditRotation": {
+        "x": 13.009742736816407,
+        "y": 129.04226684570313,
+        "z": -4.3813295746986116e-7
+    },
+    "useNonLegacyLights": true,
+    "useNonLegacyFloorColliders": true,
+    "forcePostProcessing": false,
+    "hidePlayerNameplates": false,
+    "hideItemNameplates": false,
+    "useProximityChat": false,
+    "useSkyboxPreview": true,
+    "usePostProcessingPreview": true,
+    "useWaterPreview": true,
+    "camToLinkedProp": false,
+    "props": [
+        {
+            "propID": {
+                "value": "Base/EditorLight"
+            },
+            "ID": {
+                "value": 1
+            },
+            "parentID": {
+                "value": 22
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": -3.2783628967081315e-7,
+                    "y": 1.5,
+                    "z": 2.5000038146972658
+                },
+                "rotation": {
+                    "x": 90.0,
+                    "y": -0.000009659344868850894,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 0.5000003576278687,
+                    "y": 0.5000011920928955,
+                    "z": 0.500001072883606
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Light",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [
+                {
+                    "type": 1,
+                    "range": 10.0,
+                    "spotAngle": 30.0,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0,
+                        "a": 1.0
+                    },
+                    "intensity": 1.0
+                }
+            ],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Plane"
+            },
+            "ID": {
+                "value": 2
+            },
+            "parentID": {
+                "value": 18
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 270.0,
+                    "y": 180.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 4.000046730041504,
+                    "y": 4.000026702880859,
+                    "z": 4.0000200271606449
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Plane",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Plane"
+            },
+            "ID": {
+                "value": 3
+            },
+            "parentID": {
+                "value": 18
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 3.0000123977661135,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 270.0,
+                    "y": 180.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 4.000052452087402,
+                    "y": 4.000029563903809,
+                    "z": 4.000022888183594
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Plane",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Plane"
+            },
+            "ID": {
+                "value": 4
+            },
+            "parentID": {
+                "value": 18
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 2.2168933355715126e-12,
+                    "y": 0.0,
+                    "z": -3.0000123977661135
+                },
+                "rotation": {
+                    "x": 270.0,
+                    "y": 180.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 4.000052452087402,
+                    "y": 4.000029563903809,
+                    "z": 4.000022888183594
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Plane",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Plane"
+            },
+            "ID": {
+                "value": 5
+            },
+            "parentID": {
+                "value": 18
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 3.0000123977661135,
+                    "y": 0.0,
+                    "z": -3.0000123977661135
+                },
+                "rotation": {
+                    "x": 270.0,
+                    "y": 180.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 4.000058174133301,
+                    "y": 4.000032424926758,
+                    "z": 4.000025749206543
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Plane",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/Skybox"
+            },
+            "ID": {
+                "value": 6
+            },
+            "parentID": {
+                "value": 22
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": -2.185701362122927e-7,
+                    "y": 1.5,
+                    "z": 2.250030994415283
+                },
+                "rotation": {
+                    "x": -0.0001707547635305673,
+                    "y": 270.0,
+                    "z": 180.0
+                },
+                "scale": {
+                    "x": 0.20000077784061433,
+                    "y": 0.2000008374452591,
+                    "z": 0.2000008374452591
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Skybox",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [
+                {
+                    "type": 1,
+                    "activeOnStart": false,
+                    "sun": true,
+                    "sunSize": 0.0,
+                    "sunSizeConvergence": 0.0,
+                    "atmosphereThickness": 0.0,
+                    "skyTint": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0,
+                        "a": 0.0
+                    },
+                    "ground": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0,
+                        "a": 0.0
+                    },
+                    "exposure": 0.0,
+                    "tintColor": {
+                        "r": 0.5,
+                        "g": 0.5,
+                        "b": 0.5,
+                        "a": 0.5
+                    },
+                    "exposure2": 1.0,
+                    "rotation": 0,
+                    "textures": [
+                        {
+                            "slot": "_FrontTex",
+                            "fileName": "CloudsUpDown.psd",
+                            "custom": false
+                        },
+                        {
+                            "slot": "_BackTex",
+                            "fileName": "CloudsUpDown.psd",
+                            "custom": false
+                        },
+                        {
+                            "slot": "_LeftTex",
+                            "fileName": "CloudsUpDown.psd",
+                            "custom": false
+                        },
+                        {
+                            "slot": "_RightTex",
+                            "fileName": "CloudsUpDown.psd",
+                            "custom": false
+                        },
+                        {
+                            "slot": "_UpTex",
+                            "fileName": "CloudsLeftRightFrontBack.psd",
+                            "custom": false
+                        },
+                        {
+                            "slot": "_DownTex",
+                            "fileName": "CloudsLeftRightFrontBack.psd",
+                            "custom": false
+                        }
+                    ]
+                }
+            ],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/Empty"
+            },
+            "ID": {
+                "value": 14
+            },
+            "parentID": {
+                "value": 0
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 0.0,
+                    "y": 4.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.000004768371582,
+                    "y": 1.0,
+                    "z": 1.000004768371582
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "import-parent",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Star"
+            },
+            "ID": {
+                "value": 15
+            },
+            "parentID": {
+                "value": 14
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": -2.842170943040401e-14,
+                    "y": 1.5,
+                    "z": 1.5000208616256714
+                },
+                "rotation": {
+                    "x": 270.0,
+                    "y": 90.00001525878906,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 0.5000036358833313,
+                    "y": 0.5000036954879761,
+                    "z": 0.500001847743988
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Load Module [DEBUG]",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [
+                {
+                    "isRemote": false,
+                    "isSticky": false,
+                    "duration": 0.0,
+                    "outputValueApplied": true,
+                    "outputValue": 1,
+                    "bounce": true,
+                    "loop": false,
+                    "autoplay": false,
+                    "delay": 0.0,
+                    "pauseOnLoop": 0.0,
+                    "pauseOnBounce": 0.0,
+                    "canPickupDuringAnimation": false,
+                    "appliedPickupInZoomFix": true,
+                    "playerVariableName": "",
+                    "interpolation": 0,
+                    "remoteTargets": [],
+                    "pivot": {
+                        "local": true,
+                        "position": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "rotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    },
+                    "locks": [
+                        {
+                            "instanceID": {
+                                "value": 22
+                            },
+                            "passwordIndex": 0
+                        }
+                    ],
+                    "useRigidbody": false,
+                    "useRigidbodyApplied": true
+                }
+            ],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Cube"
+            },
+            "ID": {
+                "value": 17
+            },
+            "parentID": {
+                "value": 18
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 3.752472162246704,
+                    "y": 0.44690680503845217,
+                    "z": -3.200424909591675
+                },
+                "rotation": {
+                    "x": 270.019775390625,
+                    "y": 179.99974060058595,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0667465925216675,
+                    "y": 1.173412561416626,
+                    "z": 1.7921160459518433
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Rucksack PLACEHOLDER",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [
+                {
+                    "isRemote": false,
+                    "isSticky": false,
+                    "duration": 0.0,
+                    "outputValueApplied": true,
+                    "outputValue": 1,
+                    "bounce": false,
+                    "loop": false,
+                    "autoplay": false,
+                    "delay": 0.0,
+                    "pauseOnLoop": 0.0,
+                    "pauseOnBounce": 0.0,
+                    "canPickupDuringAnimation": false,
+                    "appliedPickupInZoomFix": true,
+                    "playerVariableName": "",
+                    "interpolation": 0,
+                    "remoteTargets": [],
+                    "pivot": {
+                        "local": true,
+                        "position": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "rotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    },
+                    "locks": [],
+                    "useRigidbody": false,
+                    "useRigidbodyApplied": true
+                }
+            ],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [
+                {
+                    "disableGeneratedCollider": false,
+                    "usedFiles": [],
+                    "currentAnimation": 0,
+                    "colliderType": 0
+                }
+            ],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/Empty"
+            },
+            "ID": {
+                "value": 18
+            },
+            "parentID": {
+                "value": 14
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 0.0,
+                    "y": 3.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.000013660376680491026,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 0.5000003576278687,
+                    "y": 0.5,
+                    "z": 0.5000003576278687
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "visible-parent",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Star"
+            },
+            "ID": {
+                "value": 19
+            },
+            "parentID": {
+                "value": 14
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 0.5000038743019104,
+                    "y": 1.5,
+                    "z": 1.5000274181365967
+                },
+                "rotation": {
+                    "x": 270.0,
+                    "y": 90.00001525878906,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 0.5000041127204895,
+                    "y": 0.5000041723251343,
+                    "z": 0.5000023245811462
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Unload Module [DEBUG]",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [
+                {
+                    "isRemote": false,
+                    "isSticky": false,
+                    "duration": 0.0,
+                    "outputValueApplied": true,
+                    "outputValue": 1,
+                    "bounce": true,
+                    "loop": false,
+                    "autoplay": false,
+                    "delay": 0.0,
+                    "pauseOnLoop": 0.0,
+                    "pauseOnBounce": 0.0,
+                    "canPickupDuringAnimation": false,
+                    "appliedPickupInZoomFix": true,
+                    "playerVariableName": "",
+                    "interpolation": 0,
+                    "remoteTargets": [],
+                    "pivot": {
+                        "local": true,
+                        "position": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "rotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    },
+                    "locks": [
+                        {
+                            "instanceID": {
+                                "value": 24
+                            },
+                            "passwordIndex": 0
+                        }
+                    ],
+                    "useRigidbody": false,
+                    "useRigidbodyApplied": true
+                }
+            ],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/ActivatorComponent"
+            },
+            "ID": {
+                "value": 20
+            },
+            "parentID": {
+                "value": 22
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": -1.0927888638434524e-7,
+                    "y": 1.5,
+                    "z": 2.0000033378601076
+                },
+                "rotation": {
+                    "x": 270.0,
+                    "y": 89.9999771118164,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 0.5000017285346985,
+                    "y": 0.5000023245811462,
+                    "z": 0.5000016093254089
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "show-module",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [
+                {
+                    "activeOnStart": false,
+                    "keys": [
+                        {
+                            "value": 18
+                        },
+                        {
+                            "value": 1
+                        }
+                    ],
+                    "removeFromInventoryOnDisable": false,
+                    "targets": [],
+                    "type": 1,
+                    "targetObjectApplied": true,
+                    "targetObject": true,
+                    "targetRenderer": false,
+                    "targetCollider": false
+                }
+            ],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/ActivatorComponent"
+            },
+            "ID": {
+                "value": 21
+            },
+            "parentID": {
+                "value": 19
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 0.5000007748603821,
+                    "y": 1.5,
+                    "z": 2.0000035762786867
+                },
+                "rotation": {
+                    "x": 270.0,
+                    "y": 90.00001525878906,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 0.5000009536743164,
+                    "y": 0.5000009536743164,
+                    "z": 0.5000005960464478
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "hide-module",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [
+                {
+                    "activeOnStart": true,
+                    "keys": [
+                        {
+                            "value": 18
+                        }
+                    ],
+                    "removeFromInventoryOnDisable": false,
+                    "targets": [],
+                    "type": 0,
+                    "targetObjectApplied": true,
+                    "targetObject": true,
+                    "targetRenderer": false,
+                    "targetCollider": false
+                }
+            ],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/Lock"
+            },
+            "ID": {
+                "value": 22
+            },
+            "parentID": {
+                "value": 14
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": -2.842170943040401e-14,
+                    "y": 1.5,
+                    "z": 1.7500030994415284
+                },
+                "rotation": {
+                    "x": 270.0,
+                    "y": 180.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0000112056732178,
+                    "y": 1.0000057220458985,
+                    "z": 1.0000054836273194
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "show-module",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [
+                {
+                    "type": 0,
+                    "password": [
+                        1
+                    ],
+                    "outputValueApplied": true,
+                    "outputValue": 1,
+                    "disableLockOnUnlock": false,
+                    "delayCheckPassword": 0.0,
+                    "targets": [
+                        {
+                            "value": 20
+                        }
+                    ],
+                    "locks": [
+                        {
+                            "instanceID": {
+                                "value": 6
+                            },
+                            "passwordIndex": -500
+                        }
+                    ],
+                    "targetsOnLock": [],
+                    "locksOnLock": [],
+                    "logicType": 0,
+                    "negateValue": false,
+                    "exitZoomOnUnlock": true
+                }
+            ],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/Lock"
+            },
+            "ID": {
+                "value": 24
+            },
+            "parentID": {
+                "value": 19
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 0.5000010132789612,
+                    "y": 1.5,
+                    "z": 1.7500038146972657
+                },
+                "rotation": {
+                    "x": 270.019775390625,
+                    "y": 180.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.000016212463379,
+                    "y": 1.0000079870224,
+                    "z": 1.0000072717666627
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "show-module",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [
+                {
+                    "type": 0,
+                    "password": [
+                        1
+                    ],
+                    "outputValueApplied": true,
+                    "outputValue": 1,
+                    "disableLockOnUnlock": false,
+                    "delayCheckPassword": 0.0,
+                    "targets": [
+                        {
+                            "value": 21
+                        }
+                    ],
+                    "locks": [],
+                    "targetsOnLock": [],
+                    "locksOnLock": [],
+                    "logicType": 0,
+                    "negateValue": false,
+                    "exitZoomOnUnlock": true
+                }
+            ],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Star"
+            },
+            "ID": {
+                "value": 25
+            },
+            "parentID": {
+                "value": 27
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 2.5148825645446779,
+                    "y": 1.5001220703125,
+                    "z": 0.9468178749084473
+                },
+                "rotation": {
+                    "x": 270.0,
+                    "y": 179.97201538085938,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 0.5000095367431641,
+                    "y": 0.5000066161155701,
+                    "z": 0.5000050067901611
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Force Solve Puzzle [DEBUG]",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [
+                {
+                    "isRemote": false,
+                    "isSticky": true,
+                    "duration": 0.0,
+                    "outputValueApplied": true,
+                    "outputValue": 1,
+                    "bounce": true,
+                    "loop": false,
+                    "autoplay": false,
+                    "delay": 0.0,
+                    "pauseOnLoop": 0.0,
+                    "pauseOnBounce": 0.0,
+                    "canPickupDuringAnimation": false,
+                    "appliedPickupInZoomFix": true,
+                    "playerVariableName": "",
+                    "interpolation": 0,
+                    "remoteTargets": [],
+                    "pivot": {
+                        "local": true,
+                        "position": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "rotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    },
+                    "locks": [
+                        {
+                            "instanceID": {
+                                "value": 27
+                            },
+                            "passwordIndex": 0
+                        }
+                    ],
+                    "useRigidbody": false,
+                    "useRigidbodyApplied": true
+                }
+            ],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/Lock"
+            },
+            "ID": {
+                "value": 27
+            },
+            "parentID": {
+                "value": 18
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 2.76486873626709,
+                    "y": 1.5,
+                    "z": 0.9467778205871582
+                },
+                "rotation": {
+                    "x": 270.0,
+                    "y": 269.980224609375,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.000017762184143,
+                    "y": 1.000015377998352,
+                    "z": 1.0000113248825074
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "solve-puzzle",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [
+                {
+                    "type": 0,
+                    "password": [
+                        1
+                    ],
+                    "outputValueApplied": true,
+                    "outputValue": 1,
+                    "disableLockOnUnlock": true,
+                    "delayCheckPassword": 0.0,
+                    "targets": [
+                        {
+                            "value": 31
+                        },
+                        {
+                            "value": 29
+                        }
+                    ],
+                    "locks": [],
+                    "targetsOnLock": [],
+                    "locksOnLock": [],
+                    "logicType": 0,
+                    "negateValue": false,
+                    "exitZoomOnUnlock": true
+                }
+            ],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/Christmas/Snowman"
+            },
+            "ID": {
+                "value": 29
+            },
+            "parentID": {
+                "value": 18
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 2.976243734359741,
+                    "y": 0.4935111999511719,
+                    "z": 0.13770461082458497
+                },
+                "rotation": {
+                    "x": 270.0,
+                    "y": 180.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0000107288360596,
+                    "y": 1.0000054836273194,
+                    "z": 1.0000052452087403
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Puzzle Example",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [
+                {
+                    "isRemote": true,
+                    "isSticky": false,
+                    "duration": 0.5,
+                    "outputValueApplied": true,
+                    "outputValue": 1,
+                    "bounce": false,
+                    "loop": false,
+                    "autoplay": false,
+                    "delay": 0.0,
+                    "pauseOnLoop": 0.0,
+                    "pauseOnBounce": 0.0,
+                    "canPickupDuringAnimation": false,
+                    "appliedPickupInZoomFix": true,
+                    "playerVariableName": "",
+                    "interpolation": 0,
+                    "remoteTargets": [],
+                    "pivot": {
+                        "local": true,
+                        "position": {
+                            "x": -4.648015913127912e-12,
+                            "y": -0.00005322682409314439,
+                            "z": 0.7028598785400391
+                        },
+                        "rotation": {
+                            "x": 3.3340494632720949,
+                            "y": 180.0,
+                            "z": 180.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.000000238418579,
+                            "z": 1.000000238418579
+                        }
+                    },
+                    "locks": [],
+                    "useRigidbody": false,
+                    "useRigidbodyApplied": true
+                }
+            ],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/EditorPuzzleNeo"
+            },
+            "ID": {
+                "value": 31
+            },
+            "parentID": {
+                "value": 27
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 3.014864444732666,
+                    "y": 1.4998779296875,
+                    "z": 0.9467682838439941
+                },
+                "rotation": {
+                    "x": 270.0,
+                    "y": 0.027983125299215318,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 0.3000006079673767,
+                    "y": 0.30000150203704836,
+                    "z": 0.3000013828277588
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Rename this puzzle name!",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [
+                {
+                    "puzzleName": "",
+                    "hints": [],
+                    "conditions": [],
+                    "targets": [],
+                    "locks": [],
+                    "muteSound": false
+                }
+            ],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/Teleport"
+            },
+            "ID": {
+                "value": 33
+            },
+            "parentID": {
+                "value": 14
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 0.0,
+                    "y": 1.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.000000238418579,
+                    "y": 1.0,
+                    "z": 1.000000238418579
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Teleport",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [
+                {
+                    "teleportAll": true,
+                    "changeRotation": true,
+                    "changeRotationApplied": true
+                }
+            ],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Star"
+            },
+            "ID": {
+                "value": 34
+            },
+            "parentID": {
+                "value": 14
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": -0.4999999403953552,
+                    "y": 1.5,
+                    "z": 1.5000479221343995
+                },
+                "rotation": {
+                    "x": 270.0,
+                    "y": 90.00001525878906,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 0.5000049471855164,
+                    "y": 0.5000050067901611,
+                    "z": 0.5000031590461731
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Teleport to start [DEBUG]",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [
+                {
+                    "isRemote": false,
+                    "isSticky": false,
+                    "duration": 0.0,
+                    "outputValueApplied": true,
+                    "outputValue": 1,
+                    "bounce": true,
+                    "loop": false,
+                    "autoplay": false,
+                    "delay": 0.0,
+                    "pauseOnLoop": 0.0,
+                    "pauseOnBounce": 0.0,
+                    "canPickupDuringAnimation": false,
+                    "appliedPickupInZoomFix": true,
+                    "playerVariableName": "",
+                    "interpolation": 0,
+                    "remoteTargets": [],
+                    "pivot": {
+                        "local": true,
+                        "position": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "rotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    },
+                    "locks": [
+                        {
+                            "instanceID": {
+                                "value": 36
+                            },
+                            "passwordIndex": 0
+                        }
+                    ],
+                    "useRigidbody": false,
+                    "useRigidbodyApplied": true
+                }
+            ],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/Lock"
+            },
+            "ID": {
+                "value": 36
+            },
+            "parentID": {
+                "value": 34
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": -0.5000032782554627,
+                    "y": 1.5,
+                    "z": 1.7500293254852296
+                },
+                "rotation": {
+                    "x": 270.019775390625,
+                    "y": 180.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0000207424163819,
+                    "y": 1.0000108480453492,
+                    "z": 1.0000101327896119
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "teleport-to-module",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [
+                {
+                    "type": 0,
+                    "password": [
+                        1
+                    ],
+                    "outputValueApplied": true,
+                    "outputValue": 1,
+                    "disableLockOnUnlock": false,
+                    "delayCheckPassword": 0.0,
+                    "targets": [],
+                    "locks": [
+                        {
+                            "instanceID": {
+                                "value": 33
+                            },
+                            "passwordIndex": -500
+                        }
+                    ],
+                    "targetsOnLock": [],
+                    "locksOnLock": [],
+                    "logicType": 0,
+                    "negateValue": false,
+                    "exitZoomOnUnlock": true
+                }
+            ],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/Script"
+            },
+            "ID": {
+                "value": 38
+            },
+            "parentID": {
+                "value": 0
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": -1.0,
+                    "y": 0.2709999978542328,
+                    "z": 1.591634750366211
+                },
+                "rotation": {
+                    "x": 270.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.000001072883606,
+                    "y": 1.000001311302185,
+                    "z": 1.000001311302185
+                }
+            },
+            "isObstacle": false,
+            "exportName": "Elevate",
+            "elementNameSet": true,
+            "elementName": "Elevate",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": false,
+            "vrSparklesMode": 1,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [
+                {
+                    "scriptLocation": "elevate"
+                }
+            ],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/FloorProps/SpaceFloor1"
+            },
+            "ID": {
+                "value": 39
+            },
+            "parentID": {
+                "value": 18
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 1.2945079803466797,
+                    "y": 1.466552734375,
+                    "z": -3.0800042152404787
+                },
+                "rotation": {
+                    "x": 309.50390625,
+                    "y": 270.0,
+                    "z": 180.0
+                },
+                "scale": {
+                    "x": 1.0000007152557374,
+                    "y": 1.5867462158203126,
+                    "z": 0.28999990224838259
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Space Floor",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/Empty"
+            },
+            "ID": {
+                "value": 40
+            },
+            "parentID": {
+                "value": 0
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": -1.2575867176055909,
+                    "y": 0.11499977111816406,
+                    "z": 1.4000000953674317
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.00001001791224553017,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 0.23000000417232514,
+                    "y": 0.23000000417232514,
+                    "z": 0.23000000417232514
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Empty",
+            "playerVariableNameSet": true,
+            "playerVariableName": "elevation",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/Empty"
+            },
+            "ID": {
+                "value": 41
+            },
+            "parentID": {
+                "value": 0
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": -1.0,
+                    "y": 0.11499977111816406,
+                    "z": 1.4000000953674317
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.00001001791224553017,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 0.23000000417232514,
+                    "y": 0.23000000417232514,
+                    "z": 0.23000000417232514
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Empty",
+            "playerVariableNameSet": true,
+            "playerVariableName": "floors",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/Empty"
+            },
+            "ID": {
+                "value": 42
+            },
+            "parentID": {
+                "value": 0
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": -0.724524736404419,
+                    "y": 0.11499977111816406,
+                    "z": 1.4000000953674317
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.00001001791224553017,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 0.23000000417232514,
+                    "y": 0.23000000417232514,
+                    "z": 0.23000000417232514
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Empty",
+            "playerVariableNameSet": true,
+            "playerVariableName": "debug",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/SpawnPoint"
+            },
+            "ID": {
+                "value": 43
+            },
+            "parentID": {
+                "value": 0
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": -0.5,
+                    "y": 1.0,
+                    "z": 0.0
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 90.00003051757813,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.9999959468841553,
+                    "y": 2.0,
+                    "z": 1.9999959468841553
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Spawn",
+            "playerVariableNameSet": true,
+            "playerVariableName": "spawn{1}",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/FloorProps/SpaceFloor1"
+            },
+            "ID": {
+                "value": 44
+            },
+            "parentID": {
+                "value": 18
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 3.8500046730041506,
+                    "y": 2.999999761581421,
+                    "z": -3.0000038146972658
+                },
+                "rotation": {
+                    "x": 270.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0000011920928956,
+                    "y": 0.5000005960464478,
+                    "z": 1.000001072883606
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Space Floor",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/FloorProps/SpaceFloor1"
+            },
+            "ID": {
+                "value": 45
+            },
+            "parentID": {
+                "value": 18
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 3.8500046730041506,
+                    "y": 2.999999761581421,
+                    "z": -2.384185791015625e-7
+                },
+                "rotation": {
+                    "x": 270.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0000011920928956,
+                    "y": 0.5000005960464478,
+                    "z": 1.000001072883606
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Space Floor",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/FloorProps/SpaceFloor1"
+            },
+            "ID": {
+                "value": 46
+            },
+            "parentID": {
+                "value": 18
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 1.2945079803466797,
+                    "y": 1.466552734375,
+                    "z": -3.0800042152404787
+                },
+                "rotation": {
+                    "x": 50.496009826660159,
+                    "y": 90.0,
+                    "z": 180.0
+                },
+                "scale": {
+                    "x": 1.0000009536743165,
+                    "y": 1.587003231048584,
+                    "z": 0.2900002598762512
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Space Floor",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/FloorProps/SpaceFloor1"
+            },
+            "ID": {
+                "value": 47
+            },
+            "parentID": {
+                "value": 18
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 3.8500051498413088,
+                    "y": 2.90000057220459,
+                    "z": -3.0000038146972658
+                },
+                "rotation": {
+                    "x": 90.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0000017881393433,
+                    "y": 0.5000006556510925,
+                    "z": 1.0000014305114747
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Space Floor",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/FloorProps/SpaceFloor1"
+            },
+            "ID": {
+                "value": 48
+            },
+            "parentID": {
+                "value": 18
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 3.8500051498413088,
+                    "y": 2.899998664855957,
+                    "z": -2.384185791015625e-7
+                },
+                "rotation": {
+                    "x": 90.0,
+                    "y": 90.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1.0000017881393433,
+                    "y": 0.5000006556510925,
+                    "z": 1.0000014305114747
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Space Floor",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/ColliderComponent"
+            },
+            "ID": {
+                "value": 49
+            },
+            "parentID": {
+                "value": 40
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 1.4672901630401612,
+                    "y": 1.452762484550476,
+                    "z": -3.0799999237060549
+                },
+                "rotation": {
+                    "x": 50.49602508544922,
+                    "y": 90.00003051757813,
+                    "z": 180.0
+                },
+                "scale": {
+                    "x": 3.00000262260437,
+                    "y": 4.781007289886475,
+                    "z": 0.06900005787611008
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Collider",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/ColliderComponent"
+            },
+            "ID": {
+                "value": 50
+            },
+            "parentID": {
+                "value": 40
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 4.01141357421875,
+                    "y": 3.000000238418579,
+                    "z": -1.5
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 89.99999237060547,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 6.000007629394531,
+                    "y": 0.0689999982714653,
+                    "z": 1.5000019073486329
+                }
+            },
+            "isObstacle": false,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Collider",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/Obstacle"
+            },
+            "ID": {
+                "value": 51
+            },
+            "parentID": {
+                "value": 41
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 1.5,
+                    "y": 0.01000058650970459,
+                    "z": -1.5
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 6.0,
+                    "y": 0.009999999776482582,
+                    "z": 6.0
+                }
+            },
+            "isObstacle": true,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Obstacle",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        },
+        {
+            "propID": {
+                "value": "Base/Obstacle"
+            },
+            "ID": {
+                "value": 52
+            },
+            "parentID": {
+                "value": 41
+            },
+            "transform": {
+                "local": false,
+                "position": {
+                    "x": 1.5,
+                    "y": 3.010000228881836,
+                    "z": -1.5
+                },
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 6.0,
+                    "y": 0.009999999776482582,
+                    "z": 6.0
+                }
+            },
+            "isObstacle": true,
+            "exportName": "",
+            "elementNameSet": true,
+            "elementName": "Obstacle",
+            "playerVariableNameSet": true,
+            "playerVariableName": "",
+            "pickableType": 0,
+            "updateCloneTypeApplied": true,
+            "updateCloneType": 0,
+            "transparencyOrderOffset": 0,
+            "showSparklesInVR": true,
+            "vrSparklesMode": 0,
+            "rigidbody": [],
+            "_switch": [],
+            "turnable": [],
+            "dial": [],
+            "zoomable": [],
+            "dragTarget": [],
+            "_lock": [],
+            "slot": [],
+            "trigger": [],
+            "teleport": [],
+            "fog": [],
+            "sound": [],
+            "skybox": [],
+            "swapTextures": [],
+            "paintTextures": [],
+            "openLink": [],
+            "activatorComponent": [],
+            "editorLight": [],
+            "customModel": [],
+            "postProcessing": [],
+            "scriptComponent": [],
+            "finish": [],
+            "display": [],
+            "slidable": [],
+            "mirror": [],
+            "puzzle": [],
+            "puzzleNeo": [],
+            "editorWater": [],
+            "roulette": [],
+            "editorSetup": []
+        }
+    ],
+    "floors": [
+        {
+            "x": 0,
+            "y": 0,
+            "floorID": {
+                "value": "Floor/_EmptyFloor"
+            },
+            "ceilingID": {
+                "value": "Ceiling/_EmptyCeiling"
+            },
+            "wallIDs": [
+                {
+                    "value": "Wall/_EmptyWall"
+                },
+                {
+                    "value": "Wall/SeventiesWall"
+                },
+                {
+                    "value": "Wall/_EmptyWall"
+                },
+                {
+                    "value": "Wall/SeventiesWall"
+                }
+            ],
+            "floorPaintTextures": [],
+            "ceilingPaintTextures": [],
+            "wallPaintTextures0": [],
+            "wallPaintTextures1": [],
+            "wallPaintTextures2": [],
+            "wallPaintTextures3": []
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "floorID": {
+                "value": "Floor/_EmptyFloor"
+            },
+            "ceilingID": {
+                "value": "Ceiling/_EmptyCeiling"
+            },
+            "wallIDs": [
+                {
+                    "value": "Wall/SeventiesWall"
+                },
+                {
+                    "value": "Wall/_EmptyWall"
+                },
+                {
+                    "value": "Wall/_EmptyWall"
+                },
+                {
+                    "value": "Wall/SeventiesWall"
+                }
+            ],
+            "floorPaintTextures": [],
+            "ceilingPaintTextures": [],
+            "wallPaintTextures0": [],
+            "wallPaintTextures1": [],
+            "wallPaintTextures2": [],
+            "wallPaintTextures3": []
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "floorID": {
+                "value": "Floor/_EmptyFloor"
+            },
+            "ceilingID": {
+                "value": "Ceiling/_EmptyCeiling"
+            },
+            "wallIDs": [
+                {
+                    "value": "Wall/SeventiesWall"
+                },
+                {
+                    "value": "Wall/_EmptyWall"
+                },
+                {
+                    "value": "Wall/SeventiesWall"
+                },
+                {
+                    "value": "Wall/_EmptyWall"
+                }
+            ],
+            "floorPaintTextures": [],
+            "ceilingPaintTextures": [],
+            "wallPaintTextures0": [],
+            "wallPaintTextures1": [],
+            "wallPaintTextures2": [],
+            "wallPaintTextures3": []
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "floorID": {
+                "value": "Floor/_EmptyFloor"
+            },
+            "ceilingID": {
+                "value": "Ceiling/_EmptyCeiling"
+            },
+            "wallIDs": [
+                {
+                    "value": "Wall/_EmptyWall"
+                },
+                {
+                    "value": "Wall/SeventiesWall"
+                },
+                {
+                    "value": "Wall/SeventiesWall"
+                },
+                {
+                    "value": "Wall/_EmptyWall"
+                }
+            ],
+            "floorPaintTextures": [],
+            "ceilingPaintTextures": [],
+            "wallPaintTextures0": [],
+            "wallPaintTextures1": [],
+            "wallPaintTextures2": [],
+            "wallPaintTextures3": []
+        }
+    ]
+}
