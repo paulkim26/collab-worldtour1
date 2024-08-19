@@ -1,6 +1,6 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.0.44",
+		"generator":"Khronos glTF Blender I/O v4.2.57",
 		"version":"2.0"
 	},
 	"extensionsUsed":[
@@ -27,6 +27,7 @@
 			"doubleSided":true,
 			"extensions":{
 				"KHR_materials_specular":{
+					"specularFactor":0.16507935523986816,
 					"specularColorFactor":[
 						2.0,
 						2.0,
@@ -46,7 +47,9 @@
 					1
 				],
 				"metallicFactor":0,
-				"roughnessFactor":0.5527864098548889
+				"metallicRoughnessTexture":{
+					"index":0
+				}
 			}
 		}
 	],
@@ -73,11 +76,24 @@
 			]
 		}
 	],
+	"textures":[
+		{
+			"sampler":0,
+			"source":0
+		}
+	],
+	"images":[
+		{
+			"mimeType":"image/png",
+			"name":"tx_wollo_ballerinaporcelainRoughness",
+			"uri":"tx_wollo_ballerinaporcelainRoughness.png"
+		}
+	],
 	"accessors":[
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":1527,
+			"count":1538,
 			"max":[
 				0.23753796517848969,
 				0.3445817530155182,
@@ -93,55 +109,55 @@
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":1527,
+			"count":1538,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":1527,
+			"count":1538,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5126,
-			"count":1527,
+			"count":1538,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":4,
 			"componentType":5126,
-			"count":1527,
+			"count":1538,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":5,
 			"componentType":5126,
-			"count":1527,
+			"count":1538,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":6,
 			"componentType":5126,
-			"count":1527,
+			"count":1538,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":7,
 			"componentType":5126,
-			"count":1527,
+			"count":1538,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":8,
 			"componentType":5126,
-			"count":1527,
+			"count":1538,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":9,
 			"componentType":5126,
-			"count":1527,
+			"count":1538,
 			"type":"VEC2"
 		},
 		{
@@ -154,74 +170,80 @@
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":18324,
+			"byteLength":18456,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":18324,
-			"byteOffset":18324,
+			"byteLength":18456,
+			"byteOffset":18456,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":12216,
-			"byteOffset":36648,
+			"byteLength":12304,
+			"byteOffset":36912,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":12216,
-			"byteOffset":48864,
+			"byteLength":12304,
+			"byteOffset":49216,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":12216,
-			"byteOffset":61080,
+			"byteLength":12304,
+			"byteOffset":61520,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":12216,
-			"byteOffset":73296,
+			"byteLength":12304,
+			"byteOffset":73824,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":12216,
-			"byteOffset":85512,
+			"byteLength":12304,
+			"byteOffset":86128,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":12216,
-			"byteOffset":97728,
+			"byteLength":12304,
+			"byteOffset":98432,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":12216,
-			"byteOffset":109944,
+			"byteLength":12304,
+			"byteOffset":110736,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":12216,
-			"byteOffset":122160,
+			"byteLength":12304,
+			"byteOffset":123040,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":12990,
-			"byteOffset":134376,
+			"byteOffset":135344,
 			"target":34963
+		}
+	],
+	"samplers":[
+		{
+			"magFilter":9729,
+			"minFilter":9987
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":147368,
+			"byteLength":148336,
 			"uri":"ballerina.bin"
 		}
 	]
