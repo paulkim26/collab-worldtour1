@@ -79,12 +79,16 @@ if callType == LuaCallType.Init then
 			['var_thai_lanternB'] = 'Lantern',
 			['var_thai_lanternC'] = 'Lantern',
 			['var_thai_lanternD'] = 'Lantern',
-			['var_italy_arrow'] = 'Arrow Lock',
 			['var_thai_chestlid'] = 'Chest Lid',
 			['passport'] = 'Passport',
 			['book[1]'] = 'Minoan History',
 			['var_italy_note'] = 'Note',
-			['endButton'] = 'Continue'
+			['endButton'] = 'Continue',
+			['var_italy_paint1'] = 'Painting Turner',
+			['var_italy_paint2'] = 'Painting Turner',
+			['var_italy_paint3'] = 'Painting Turner',
+			['var_italy_paint4'] = 'Painting Turner',
+			['var_italy_paint5'] = 'Painting Turner'
 		},
 		[2] = { -- French
 			['fakeTravel[1]'] = 'Voyager',
@@ -164,12 +168,16 @@ if callType == LuaCallType.Init then
 			['var_thai_lanternB'] = 'Lanterne',
 			['var_thai_lanternC'] = 'Lanterne',
 			['var_thai_lanternD'] = 'Lanterne',
-			['var_italy_arrow'] = 'Serrure à flèche',
 			['var_thai_chestlid'] = 'Couvercle de coffre',
 			['passport'] = 'Passeport',
 			['book[1]'] = 'Histoire minoenne',
 			['var_italy_note'] = 'Note',
-			['endButton'] = 'Continuer'
+			['endButton'] = 'Continuer',
+			['var_italy_paint1'] = 'Peinture Turner',
+			['var_italy_paint2'] = 'Peinture Turner',
+			['var_italy_paint3'] = 'Peinture Turner',
+			['var_italy_paint4'] = 'Peinture Turner',
+			['var_italy_paint5'] = 'Peinture Turner'
 		},
 		[3] = { -- German
 			['fakeTravel[1]'] = 'Reisen',
@@ -249,12 +257,16 @@ if callType == LuaCallType.Init then
 			['var_thai_lanternB'] = 'Laterne',
 			['var_thai_lanternC'] = 'Laterne',
 			['var_thai_lanternD'] = 'Laterne',
-			['var_italy_arrow'] = 'Pfeilschloss',
 			['var_thai_chestlid'] = 'Truhendeckel',
 			['passport'] = 'Reisepass',
 			['book[1]'] = 'Minoische Geschichte',
 			['var_italy_note'] = 'Notiz',
-			['endButton'] = 'Fortsetzen'
+			['endButton'] = 'Fortsetzen',
+			['var_italy_paint1'] = 'Turner-Gemälde',
+			['var_italy_paint2'] = 'Turner-Gemälde',
+			['var_italy_paint3'] = 'Turner-Gemälde',
+			['var_italy_paint4'] = 'Turner-Gemälde',
+			['var_italy_paint5'] = 'Turner-Gemälde'
 		},
 		[4] = { -- Italian
 			['fakeTravel[1]'] = 'Viaggiare',
@@ -334,12 +346,16 @@ if callType == LuaCallType.Init then
 			['var_thai_lanternB'] = 'Lanterna',
 			['var_thai_lanternC'] = 'Lanterna',
 			['var_thai_lanternD'] = 'Lanterna',
-			['var_italy_arrow'] = 'Serratura a freccia',
 			['var_thai_chestlid'] = 'Coperchio del baule',
 			['passport'] = 'Passaporto',
 			['book[1]'] = 'Storia minoica',
 			['var_italy_note'] = 'Nota',
-			['endButton'] = 'Continua'
+			['endButton'] = 'Continua',
+			['var_italy_paint1'] = 'Dipinto di Turner',
+			['var_italy_paint2'] = 'Dipinto di Turner',
+			['var_italy_paint3'] = 'Dipinto di Turner',
+			['var_italy_paint4'] = 'Dipinto di Turner',
+			['var_italy_paint5'] = 'Dipinto di Turner'
 		},
 		[5] = { -- Spanish
 			['fakeTravel[1]'] = 'Viajar',
@@ -419,12 +435,16 @@ if callType == LuaCallType.Init then
 			['var_thai_lanternB'] = 'Linterna',
 			['var_thai_lanternC'] = 'Linterna',
 			['var_thai_lanternD'] = 'Linterna',
-			['var_italy_arrow'] = 'Cerradura de flecha',
 			['var_thai_chestlid'] = 'Tapa del cofre',
 			['passport'] = 'Pasaporte',
 			['book[1]'] = 'Historia minoica',
 			['var_italy_note'] = 'Nota',
-			['endButton'] = 'Continuar'
+			['endButton'] = 'Continuar',
+			['var_italy_paint1'] = 'Pintura de Turner',
+			['var_italy_paint2'] = 'Pintura de Turner',
+			['var_italy_paint3'] = 'Pintura de Turner',
+			['var_italy_paint4'] = 'Pintura de Turner',
+			['var_italy_paint5'] = 'Pintura de Turner'
 		},
 		[6] = { -- Portuguese
 			['fakeTravel[1]'] = 'Viajar',
@@ -504,12 +524,16 @@ if callType == LuaCallType.Init then
 			['var_thai_lanternB'] = 'Lanterna',
 			['var_thai_lanternC'] = 'Lanterna',
 			['var_thai_lanternD'] = 'Lanterna',
-			['var_italy_arrow'] = 'Fechadura de flecha',
 			['var_thai_chestlid'] = 'Tampa do baú',
 			['passport'] = 'Passaporte',
 			['book[1]'] = 'História minoica',
 			['var_italy_note'] = 'Nota',
-			['endButton'] = 'Continuar'
+			['endButton'] = 'Continuar',
+			['var_italy_paint1'] = 'Pintura de Turner',
+			['var_italy_paint2'] = 'Pintura de Turner',
+			['var_italy_paint3'] = 'Pintura de Turner',
+			['var_italy_paint4'] = 'Pintura de Turner',
+			['var_italy_paint5'] = 'Pintura de Turner'
 		},
 		[7] = { -- Turkish
 			['fakeTravel[1]'] = 'Seyahat etmek',
@@ -589,12 +613,16 @@ if callType == LuaCallType.Init then
 			['var_thai_lanternB'] = 'Fener',
 			['var_thai_lanternC'] = 'Fener',
 			['var_thai_lanternD'] = 'Fener',
-			['var_italy_arrow'] = 'Ok Kilidi',
 			['var_thai_chestlid'] = 'Sandık kapağı',
 			['passport'] = 'Pasaport',
 			['book[1]'] = 'Minos Tarihi',
 			['var_italy_note'] = 'Not',
-			['endButton'] = 'Devam Et'
+			['endButton'] = 'Devam Et',
+			['var_italy_paint1'] = 'Turner Tablosu',
+			['var_italy_paint2'] = 'Turner Tablosu',
+			['var_italy_paint3'] = 'Turner Tablosu',
+			['var_italy_paint4'] = 'Turner Tablosu',
+			['var_italy_paint5'] = 'Turner Tablosu'
 		},
 		[8] = { -- Chinese
 			['fakeTravel[1]'] = '旅行',
@@ -674,12 +702,16 @@ if callType == LuaCallType.Init then
 			['var_thai_lanternB'] = '灯笼',
 			['var_thai_lanternC'] = '灯笼',
 			['var_thai_lanternD'] = '灯笼',
-			['var_italy_arrow'] = '箭锁',
 			['var_thai_chestlid'] = '箱盖',
 			['passport'] = '护照',
 			['book[1]'] = '米诺斯历史',
 			['var_italy_note'] = '笔记',
-			['endButton'] = '继续'
+			['endButton'] = '继续',
+			['var_italy_paint1'] = '特纳画作',
+			['var_italy_paint2'] = '特纳画作',
+			['var_italy_paint3'] = '特纳画作',
+			['var_italy_paint4'] = '特纳画作',
+			['var_italy_paint5'] = '特纳画作'
 		},
 		[9] = { -- Japanese
 			['fakeTravel[1]'] = '旅行する',
@@ -759,12 +791,16 @@ if callType == LuaCallType.Init then
 			['var_thai_lanternB'] = '提灯',
 			['var_thai_lanternC'] = '提灯',
 			['var_thai_lanternD'] = '提灯',
-			['var_italy_arrow'] = '矢印錠',
 			['var_thai_chestlid'] = 'ふた',
 			['passport'] = 'パスポート',
 			['book[1]'] = 'ミノアの歴史',
 			['var_italy_note'] = 'メモ',
-			['endButton'] = '続ける'
+			['endButton'] = '続ける',
+			['var_italy_paint1'] = 'ターナーの絵画',
+			['var_italy_paint2'] = 'ターナーの絵画',
+			['var_italy_paint3'] = 'ターナーの絵画',
+			['var_italy_paint4'] = 'ターナーの絵画',
+			['var_italy_paint5'] = 'ターナーの絵画'
 		},
 		[10] = { -- Korean
 			['fakeTravel[1]'] = '여행하다',
@@ -844,12 +880,16 @@ if callType == LuaCallType.Init then
 			['var_thai_lanternB'] = '랜턴',
 			['var_thai_lanternC'] = '랜턴',
 			['var_thai_lanternD'] = '랜턴',
-			['var_italy_arrow'] = '화살표 자물쇠',
 			['var_thai_chestlid'] = '상자 뚜껑',
 			['passport'] = '여권',
 			['book[1]'] = '미노아 역사',
 			['var_italy_note'] = '메모',
-			['endButton'] = '계속'
+			['endButton'] = '계속',
+			['var_italy_paint1'] = '터너의 그림',
+			['var_italy_paint2'] = '터너의 그림',
+			['var_italy_paint3'] = '터너의 그림',
+			['var_italy_paint4'] = '터너의 그림',
+			['var_italy_paint5'] = '터너의 그림'
 		}
 	}
 	function getIndex(context)
