@@ -1,55 +1,13 @@
 --[[
-This script has been written by GG3L and modified by apa-games. You are not allowed to use this script for your own rooms unless you ask for permission.
-You can also download a generalized version from GG3L's public LUA collection
---]]
+    Author: GG3L (@GGӡL)
+    Script: Scary Mirror
+    Description: This script adds the ability to make certain objects only visible in mirrors.
 
-if callType == LuaCallType.Init then
-	logicProps = {
-		['Base/ActivatorComponent'] = true,
-		['Base/ColliderComponent'] = true,
-		['Base/EditorDisplay'] = true,
-		['Base/EditorLight'] = true,
-		['Base/EditorPostProcessing'] = true,
-		['Base/EditorPuzzleNeo'] = true,
-		['Base/EditorWater'] = true,
-		['Base/Empty'] = true,
-		['Base/Finish'] = true,
-		['Base/Fog'] = true,
-		['Base/Lock'] = true,
-		['Base/Mirror'] = true,
-		['Base/Obstacle'] = true,
-		['Base/OpenLink'] = true,
-		['Base/Roulette'] = true,
-		['Base/Script'] = true,
-		['Base/Skybox'] = true,
-		['Base/Slot'] = true,
-		['Base/Sound'] = true,
-		['Base/SpawnPoint'] = true,
-		['Base/Teleport'] = true,
-		['Base/Trigger'] = true
-	}
+    Permission is granted to use this script in custom rooms for Escape Simulator, provided that:
+    - Credit is given to the author.
+    - Neither this header nor the code is modified.
 
-	function isEffect(name)
-		local nameLower = string.lower(name)
-		if string.sub(nameLower, 1, 8) == 'effects/' then
-			return true
-		end
-		return false
-	end
-
-	function setLayer(transform, layer, strictMode)
-		if strictMode and (logicProps[transform.name] or isEffect(transform.name)) then
-			return
-		end
-		transform.gameObject.layer = layer
-		local childCount = transform.gameObject.transform.childCount
-		for index = 0, childCount - 1 do
-			local childTransform = transform.gameObject.transform.GetChild(index)
-			if childTransform then
-				setLayer(childTransform, layer, true)
-			end
-		end
-	end
-
-	setLayer(reflection.transform, 28)
-end
+    Unauthorized distribution or modification is prohibited.
+    All rights reserved by the author.
+]]
+if callType==LuaCallType.Init then a={['\66\97\115\101/\65\99\116\105\118\97\116\111\114\67\111\109\112\111\110\101\110\116']=true,['\66\97\115\101/\67\111\108\108\105\100\101\114\67\111\109\112\111\110\101\110\116']=true,['\66\97\115\101/\69\100\105\116\111\114\68\105\115\112\108\97\121']=true,['\66\97\115\101/\69\100\105\116\111\114\76\105\103\104\116']=true,['\66\97\115\101/\69\100\105\116\111\114\80\111\115\116\80\114\111\99\101\115\115\105\110\103']=true,['\66\97\115\101/\69\100\105\116\111\114\80\117\122\122\108\101\78\101\111']=true,['\66\97\115\101/\69\100\105\116\111\114\87\97\116\101\114']=true,['\66\97\115\101/\69\100\105\116\111\114\83\101\116\117\112']=true,['\66\97\115\101/\69\109\112\116\121']=true,['\66\97\115\101/\70\105\110\105\115\104']=true,['\66\97\115\101/\70\111\103']=true,['\66\97\115\101/\76\111\99\107']=true,['\66\97\115\101/\77\105\114\114\111\114']=true,['\66\97\115\101/\79\98\115\116\97\99\108\101']=true,['\66\97\115\101/\79\112\101\110\76\105\110\107']=true,['\66\97\115\101/\82\111\117\108\101\116\116\101']=true,['\66\97\115\101/\83\99\114\105\112\116']=true,['\66\97\115\101/\83\107\121\98\111\120']=true,['\66\97\115\101/\83\108\111\116']=true,['\66\97\115\101/\83\111\117\110\100']=true,['\66\97\115\101/\83\112\97\119\110\80\111\105\110\116']=true,['\66\97\115\101/\84\101\108\101\112\111\114\116']=true,['\66\97\115\101/\84\114\105\103\103\101\114']=true}function b(c)if string["\115\117\98"](string["\108\111\119\101\114"](c["\112\97\114\101\110\116"]["\110\97\109\101"]),1,8)=='\101\102\102\101\99\116\115/'then return string["\115\117\98"](string["\108\111\119\101\114"](c["\110\97\109\101"]),1,4)=='\99\117\98\101'end return false end function d(e,f)if not a[e["\110\97\109\101"]]and not b(e)then e["\103\97\109\101\79\98\106\101\99\116"]["\108\97\121\101\114"]=f end g=e["\103\97\109\101\79\98\106\101\99\116"]["\116\114\97\110\115\102\111\114\109"]["\99\104\105\108\100\67\111\117\110\116"]for h=0,g-1 do i=e["\103\97\109\101\79\98\106\101\99\116"]["\116\114\97\110\115\102\111\114\109"]["\71\101\116\67\104\105\108\100"](h)if i then d(i,f)end end end d(reflection["\116\114\97\110\115\102\111\114\109"],28)end
