@@ -125,10 +125,9 @@ if callType == LuaCallType.Init then
                 api.levelNote(string.char(0x24D8)..' '..language[langIndex][4])
             end
             api.setLockValue(zesty_tokendoor_unlock, 1, 1)
-        else
-            index = getIndex(context)
-            api.setLockValue(_G['zesty_tokendoor_display'..index], 1, 1)
         end
+        index = getIndex(context)
+        api.setLockValue(_G['zesty_tokendoor_display'..index], 1, 1)
 	end
     function tokenStatus(context)
         element = context.gameObject.GetComponent('Element')
