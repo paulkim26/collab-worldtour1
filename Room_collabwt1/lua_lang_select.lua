@@ -1,4 +1,5 @@
 if callType == LuaCallType.Init then
+	initCharacterModels = false
 	characterModels = {}
     language = {
 		[1] = { -- English
@@ -77,24 +78,21 @@ if callType == LuaCallType.Init then
 			cm.SetActive(state)
 		end
 	end
-	function initCharacterModels()
-		local cm = transform.gameObject.Find('CharacterModels')
-		local players = api.getAllPlayers()
-		if cm or #characterModels == 0 or #characterModels ~= #players then
-			if cm then
-				table.insert(characterModels, cm.gameObject)
-				characterModels[#characterModels].SetActive(false)
-				cm.transform.name = 'done'
-			end
-			initCharacterModels()
-		end
-	end
 	function getIndex(context)
         local element = context.gameObject.GetComponent('Element')
         local index = string.match(element.playerVariableName, "{(%d+)}")
         return tonumber(index)
     end
-	initCharacterModels()
+end
+if callType == LuaCallType.Update then
+	if not initCharacterModels then
+		local cm = transform.gameObject.Find('done')
+		if cm then
+			table.insert(characterModels, cm.gameObject)
+			characterModels[#characterModels].SetActive(false)
+			cm.transform.name = 'done2'
+		end
+	end
 end
 if callType == LuaCallType.SwitchDone then
 	if context == toggleUI[1] then
@@ -114,6 +112,7 @@ if callType == LuaCallType.SwitchDone then
 		lbElem.elementName = language[index].languageButton
 		local pbElem = startButton.gameObject.GetComponent('Element')
 		pbElem.elementName = language[index].startButton
+		initCharacterModels = true
 	end
 	if context == toggleCM then
 		toggleCharacterModels(true)
