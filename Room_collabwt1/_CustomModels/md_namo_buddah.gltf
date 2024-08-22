@@ -1,6 +1,6 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.2.57",
+		"generator":"Khronos glTF Blender I/O v4.0.44",
 		"version":"2.0"
 	},
 	"scene":0,
@@ -38,7 +38,7 @@
 				-1,
 				0,
 				0,
-				2.681303512552802e-10
+				5.009636594444089e-10
 			]
 		},
 		{
@@ -82,15 +82,7 @@
 						"NORMAL":1,
 						"TEXCOORD_0":2
 					},
-					"indices":3
-				},
-				{
-					"attributes":{
-						"POSITION":4,
-						"NORMAL":5,
-						"TEXCOORD_0":6
-					},
-					"indices":7,
+					"indices":3,
 					"material":0
 				}
 			]
@@ -104,20 +96,20 @@
 	],
 	"images":[
 		{
-			"mimeType":"image/jpeg",
-			"name":"tx_namo_bronze",
-			"uri":"tx_namo_bronze.jpg"
+			"mimeType":"image/png",
+			"name":"tx_hub_wood",
+			"uri":"tx_hub_wood.png"
 		}
 	],
 	"accessors":[
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":3948,
+			"count":36182,
 			"max":[
 				3.6761717796325684,
 				7.246850967407227,
-				0.0079537034034729
+				16.842681884765625
 			],
 			"min":[
 				-4.179594993591309,
@@ -129,103 +121,45 @@
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":3948,
+			"count":36182,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":3948,
+			"count":36182,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":5922,
-			"type":"SCALAR"
-		},
-		{
-			"bufferView":4,
-			"componentType":5126,
-			"count":32062,
-			"max":[
-				3.6761717796325684,
-				7.246850967407227,
-				16.842681884765625
-			],
-			"min":[
-				-4.179594993591309,
-				-7.434977054595947,
-				-2.9512598514556885
-			],
-			"type":"VEC3"
-		},
-		{
-			"bufferView":5,
-			"componentType":5126,
-			"count":32062,
-			"type":"VEC3"
-		},
-		{
-			"bufferView":6,
-			"componentType":5126,
-			"count":32062,
-			"type":"VEC2"
-		},
-		{
-			"bufferView":7,
-			"componentType":5123,
-			"count":111387,
+			"count":117309,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":47376,
+			"byteLength":434184,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":47376,
-			"byteOffset":47376,
+			"byteLength":434184,
+			"byteOffset":434184,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":31584,
-			"byteOffset":94752,
+			"byteLength":289456,
+			"byteOffset":868368,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":11844,
-			"byteOffset":126336,
-			"target":34963
-		},
-		{
-			"buffer":0,
-			"byteLength":384744,
-			"byteOffset":138180,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":384744,
-			"byteOffset":522924,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":256496,
-			"byteOffset":907668,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":222774,
-			"byteOffset":1164164,
+			"byteLength":234618,
+			"byteOffset":1157824,
 			"target":34963
 		}
 	],
@@ -237,7 +171,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":1386940,
+			"byteLength":1392444,
 			"uri":"md_namo_buddah.bin"
 		}
 	]
