@@ -102,14 +102,10 @@ end
 if callType == LuaCallType.SwitchDone then
 	if api.contains(selectLanguage, context) and context.isOn then
 		local index = getIndex(context)
-		local sbElem = soundButton.gameObject.GetComponent('Element')
-		sbElem.elementName = language[index].soundButton
 		local nbElem = narrationButton.gameObject.GetComponent('Element')
 		nbElem.elementName = language[index].narrationButton
 		local mbElem = musicButton.gameObject.GetComponent('Element')
 		mbElem.elementName = language[index].musicButton
-		local lbElem = languageButton.gameObject.GetComponent('Element')
-		lbElem.elementName = language[index].languageButton
 		local pbElem = startButton.gameObject.GetComponent('Element')
 		pbElem.elementName = language[index].startButton
 		initCharacterModels = true
