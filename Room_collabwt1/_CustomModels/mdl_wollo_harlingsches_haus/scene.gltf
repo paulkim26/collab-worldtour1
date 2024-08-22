@@ -1,6 +1,6 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.1.63",
+		"generator":"Khronos glTF Blender I/O v4.0.44",
 		"version":"2.0"
 	},
 	"scene":0,
@@ -101,7 +101,7 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":6942,
+			"count":6936,
 			"max":[
 				3.3242897987365723,
 				1.3319334983825684,
@@ -117,19 +117,19 @@
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":6942,
+			"count":6936,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":6942,
+			"count":6936,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":13968,
+			"count":13962,
 			"type":"SCALAR"
 		},
 		{
@@ -170,50 +170,50 @@
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":83304,
+			"byteLength":83232,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":83304,
-			"byteOffset":83304,
+			"byteLength":83232,
+			"byteOffset":83232,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":55536,
-			"byteOffset":166608,
+			"byteLength":55488,
+			"byteOffset":166464,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":27936,
-			"byteOffset":222144,
+			"byteLength":27924,
+			"byteOffset":221952,
 			"target":34963
 		},
 		{
 			"buffer":0,
 			"byteLength":21600,
-			"byteOffset":250080,
+			"byteOffset":249876,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":21600,
-			"byteOffset":271680,
+			"byteOffset":271476,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":14400,
-			"byteOffset":293280,
+			"byteOffset":293076,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":5400,
-			"byteOffset":307680,
+			"byteOffset":307476,
 			"target":34963
 		}
 	],
@@ -225,7 +225,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":313080,
+			"byteLength":312876,
 			"uri":"scene.bin"
 		}
 	]
