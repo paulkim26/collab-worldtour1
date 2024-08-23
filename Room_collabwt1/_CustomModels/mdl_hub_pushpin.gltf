@@ -1,10 +1,11 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.1.62",
+		"generator":"Khronos glTF Blender I/O v4.2.57",
 		"version":"2.0"
 	},
 	"extensionsUsed":[
-		"KHR_materials_specular"
+		"KHR_materials_specular",
+		"KHR_materials_ior"
 	],
 	"scene":0,
 	"scenes":[
@@ -45,8 +46,8 @@
 			],
 			"scale":[
 				0.009999999776482582,
-				0.009999997913837433,
-				0.009999997913837433
+				0.009999996051192284,
+				0.009999996051192284
 			]
 		},
 		{
@@ -64,25 +65,30 @@
 	],
 	"materials":[
 		{
+			"alphaMode":"BLEND",
 			"doubleSided":true,
 			"extensions":{
 				"KHR_materials_specular":{
 					"specularColorFactor":[
-						1.1417323350906372,
-						1.1417323350906372,
-						1.1417323350906372
+						1.2061855792999268,
+						1.2061855792999268,
+						1.2061855792999268
 					]
+				},
+				"KHR_materials_ior":{
+					"ior":5.999999523162842
 				}
 			},
-			"name":"lambert1.010",
+			"name":"Material.001",
 			"pbrMetallicRoughness":{
 				"baseColorFactor":[
-					0.4999244809150696,
 					0,
-					0.0023355295415967703,
-					1
+					0,
+					0,
+					0.793814480304718
 				],
-				"roughnessFactor":0.3559055030345917
+				"metallicFactor":0.8556700944900513,
+				"roughnessFactor":0.07731959223747253
 			}
 		}
 	],
@@ -106,7 +112,7 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":292,
+			"count":308,
 			"max":[
 				0.4302308261394501,
 				2.9529855251312256,
@@ -122,13 +128,13 @@
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":292,
+			"count":308,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":292,
+			"count":308,
 			"type":"VEC2"
 		},
 		{
@@ -141,32 +147,32 @@
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":3504,
+			"byteLength":3696,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":3504,
-			"byteOffset":3504,
+			"byteLength":3696,
+			"byteOffset":3696,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":2336,
-			"byteOffset":7008,
+			"byteLength":2464,
+			"byteOffset":7392,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":1440,
-			"byteOffset":9344,
+			"byteOffset":9856,
 			"target":34963
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":10784,
+			"byteLength":11296,
 			"uri":"mdl_hub_pushpin.bin"
 		}
 	]
