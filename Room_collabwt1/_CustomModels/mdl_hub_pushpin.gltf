@@ -39,15 +39,15 @@
 			],
 			"name":"81fb9b04de754231b6230e7f0f7d23fb.fbx",
 			"rotation":[
-				0.70710688829422,
+				0.7071069478988647,
 				0,
 				0,
 				0.7071066498756409
 			],
 			"scale":[
 				0.009999999776482582,
-				0.009999996051192284,
-				0.009999996051192284
+				0.009999995119869709,
+				0.009999995119869709
 			]
 		},
 		{
@@ -82,11 +82,14 @@
 			"name":"Material.001",
 			"pbrMetallicRoughness":{
 				"baseColorFactor":[
-					0,
-					0,
-					0,
+					1,
+					1,
+					1,
 					0.793814480304718
 				],
+				"baseColorTexture":{
+					"index":0
+				},
 				"metallicFactor":0.8556700944900513,
 				"roughnessFactor":0.07731959223747253
 			}
@@ -106,6 +109,19 @@
 					"material":0
 				}
 			]
+		}
+	],
+	"textures":[
+		{
+			"sampler":0,
+			"source":0
+		}
+	],
+	"images":[
+		{
+			"mimeType":"image/png",
+			"name":"tx_hub_vintagecameralenseColor",
+			"uri":"tx_hub_vintagecameralenseColor.png"
 		}
 	],
 	"accessors":[
@@ -168,6 +184,12 @@
 			"byteLength":1440,
 			"byteOffset":9856,
 			"target":34963
+		}
+	],
+	"samplers":[
+		{
+			"magFilter":9729,
+			"minFilter":9987
 		}
 	],
 	"buffers":[
