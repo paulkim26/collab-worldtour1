@@ -44,4 +44,14 @@ if callType == LuaCallType.SwitchDone then
 		local index = getIndex(context)
 		langIndex = index
 	end
+	if context == menuLogo and context.isOn then
+		if api.getLocalPlayer() == api.getMainPlayer() then
+			fakeMenu.gameObject.SetActive(false)
+		end
+	end
+	if context == fakeMenu and context.isOn then
+		if api.getLocalPlayer() ~= api.getMainPlayer() then
+			api.levelNote(string.char(0x24D8)..' '..language[langIndex])
+		end
+	end
 end
