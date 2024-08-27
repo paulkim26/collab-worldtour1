@@ -1,4 +1,5 @@
 if callType == LuaCallType.Init then
+	isSP = false
 	langIndex = 1
     language = {
 		[1] = 'Waiting for Host', -- English
@@ -25,7 +26,7 @@ end
 
 if callType == LuaCallType.SwitchDone then
 	if context == startButton then
-		if api.getLocalPlayer() == api.getMainPlayer() then
+		if isSP or api.getLocalPlayer() == api.getMainPlayer() then
 			for i, tt in pairs(trueTravel) do
 				tt.gameObject.SetActive(true)
 			end
@@ -45,7 +46,7 @@ if callType == LuaCallType.SwitchDone then
 		langIndex = index
 	end
 	if context == menuLogo and context.isOn then
-		if api.getLocalPlayer() == api.getMainPlayer() then
+		if isSP or api.getLocalPlayer() == api.getMainPlayer() then
 			fakeMenu.gameObject.SetActive(false)
 		end
 	end
@@ -53,5 +54,8 @@ if callType == LuaCallType.SwitchDone then
 		if api.getLocalPlayer() ~= api.getMainPlayer() then
 			api.levelNote(string.char(0x24D8)..' '..language[langIndex])
 		end
+	end
+	if context == spDetect then
+		isSP = true
 	end
 end

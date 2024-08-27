@@ -5,4 +5,23 @@
     
     All rights reserved by the author. Unauthorized distribution or modification is prohibited.
 ]]
-if callType==LuaCallType.Init then function a(b)c=b.gameObject.GetComponent('Element')d=string.match(c.playerVariableName,"{(%d+)}")return tonumber(d)end end if callType==LuaCallType.SwitchDone then if api.contains(incOutput,context)and context.isOn then e=context.gameObject.GetComponent('Switch')e.outputValue=e.outputValue+1 end if api.contains(resetOutput,context)and context.isOn then f=a(context)g=incOutput[f].gameObject.GetComponent('Switch')g.outputValue=1 end end
+if callType == LuaCallType.Init then
+	function getIndex(context)
+        local element = context.gameObject.GetComponent('Element')
+        local index = string.match(element.playerVariableName, "{(%d+)}")
+        return tonumber(index)
+    end
+end
+
+if callType == LuaCallType.SwitchDone then
+	if api.contains(incOutput, context) and context.isOn then
+		local switch = context.gameObject.GetComponent('Switch')
+		api.log(switch.outputValue)
+		switch.outputValue = switch.outputValue + 1
+	end
+	if api.contains(resetOutput, context) and context.isOn then
+		local index = getIndex(context)
+		local switch = incOutput[index].gameObject.GetComponent('Switch')
+		switch.outputValue = 1
+	end
+end

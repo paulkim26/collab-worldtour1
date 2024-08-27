@@ -1,1 +1,28 @@
-if callType==LuaCallType.Init then function a(b)local c=toggleUI[1]['\116\114\97\110\115\102\111\114\109']['\112\97\114\101\110\116']if b then c=b['\112\97\114\101\110\116']end if c['\110\97\109\101']=='LevelContainer'or c['\110\97\109\101']=='LevelContainerEditor'then return toggleUI[1]['\103\97\109\101\79\98\106\101\99\116'].Find(c['\110\97\109\101'])else return a(c)end end d=a()e=d['\116\114\97\110\115\102\111\114\109'].GetChild(0)end if callType==LuaCallType.SwitchStarted then if context==toggleUI[1] then e['\103\97\109\101\79\98\106\101\99\116'].SetActive(false)end end if callType==LuaCallType.SwitchDone then if context==toggleUI[1] then e['\103\97\109\101\79\98\106\101\99\116'].SetActive(true)end end
+if callType == LuaCallType.Init then
+    function getLevelContainer(transform)
+        local currentTransform = toggleUI[1].transform.parent
+        if transform then
+            currentTransform = transform.parent
+        end
+        if currentTransform.name == 'LevelContainer' or currentTransform.name == 'LevelContainerEditor' then
+            return toggleUI[1].gameObject.Find(currentTransform.name)
+        else
+            return getLevelContainer(currentTransform)
+        end
+    end
+
+    LevelContainer = getLevelContainer()
+    navMesh = LevelContainer.transform.GetChild(0)
+end
+
+if callType == LuaCallType.SwitchStarted then
+    if context == toggleUI[1] then
+        navMesh.gameObject.SetActive(false)
+    end
+end
+
+if callType == LuaCallType.SwitchDone then
+    if context == toggleUI[1] then
+        navMesh.gameObject.SetActive(true)
+    end
+end

@@ -1,1 +1,27 @@
-if callType==LuaCallType.Init then a=0 animate[6]['\114\101\109\111\116\101\79\110\108\121']=false end if callType==LuaCallType.SwitchStarted then if context==animate[6]and not context['\105\115\79\110']then animate[6]['\114\101\109\111\116\101\79\110\108\121']=true a=3 end if context==animate[3]and not context['\105\115\79\110']then animate[3]['\114\101\109\111\116\101\79\110\108\121']=true a=5 end if context==animate[5]and not context['\105\115\79\110']then animate[5]['\114\101\109\111\116\101\79\110\108\121']=true a=0 end end if callType==LuaCallType.SwitchDone then if context==dollTargetToggle then if a~=0 then animate[a]['\114\101\109\111\116\101\79\110\108\121']=false end end end
+if callType == LuaCallType.Init then
+    next = 0
+    animatePath[5].remoteOnly = false
+end
+
+if callType == LuaCallType.SwitchStarted then
+    if context == animatePath[5] and not context.isOn then
+        animatePath[5].remoteOnly = true
+        next = 2
+    end
+    if context == animatePath[2] and not context.isOn then
+        animatePath[2].remoteOnly = true
+        next = 4
+    end
+    if context == animatePath[4] and not context.isOn then
+        animatePath[4].remoteOnly = true
+        next = 0
+    end
+end
+
+if callType == LuaCallType.SwitchDone then
+    if context == dollTargetToggle then
+        if next ~= 0 then
+            animatePath[next].remoteOnly = false
+        end
+    end
+end
