@@ -10,4 +10,107 @@
     Unauthorized distribution or modification is prohibited.
     All rights reserved by the author.
 ]]
-if callType==LuaCallType.Init then a=false b={}c={}d=api.getLocalPlayer()function e(f)local g=spawn[1]['\116\114\97\110\115\102\111\114\109']['\112\97\114\101\110\116']if f then g=f['\112\97\114\101\110\116']end if g['\110\97\109\101']=='\76\101\118\101\108\67\111\110\116\97\105\110\101\114'or g['\110\97\109\101']=='\76\101\118\101\108\67\111\110\116\97\105\110\101\114\69\100\105\116\111\114'then return spawn[1]['\103\97\109\101\79\98\106\101\99\116'].Find(g['\110\97\109\101'])else return e(g)end end h=e()i=h['\116\114\97\110\115\102\111\114\109'].GetChild(0)j=d['\103\97\109\101\79\98\106\101\99\116'].FindGameObjectWithTag('\77\97\105\110\67\97\109\101\114\97')function k()local l=d['\103\97\109\101\79\98\106\101\99\116'].Find('\67\104\97\114\97\99\116\101\114\77\111\100\101\108\115')if l then table.insert(b,l['\103\97\109\101\79\98\106\101\99\116'])l['\116\114\97\110\115\102\111\114\109']['\110\97\109\101']='\100\111\110\101'k()end end function m()for n,o in ipairs(followFC)do p=endFC and endFC[n]or false table.insert(c,n,{q=followFC[n],r=p,s=false})end end function t(u)local v=u['\103\97\109\101\79\98\106\101\99\116'].GetComponent('\69\108\101\109\101\110\116')local w=string.match(v['\112\108\97\121\101\114\86\97\114\105\97\98\108\101\78\97\109\101'],"{(%d+)}")return tonumber(w)end function x(y)for _,z in ipairs(b)do z.SetActive(y)end end function A(B,C)local D=C-B if D>180 or C>180 then C=C-360 elseif D<-180 or C<-180 then C=C+360 end return C end k()m()end if callType==LuaCallType.SwitchDone then if api.contains(startFC,context)then local E=t(context)x(false)c[E].q=followFC[E]c[E].r=endFC[E]or{['\116\114\97\110\115\102\111\114\109']={['\112\111\115\105\116\105\111\110']=d['\116\114\97\110\115\102\111\114\109']['\112\111\115\105\116\105\111\110'],['\101\117\108\101\114\65\110\103\108\101\115']=j['\116\114\97\110\115\102\111\114\109']['\101\117\108\101\114\65\110\103\108\101\115']}}i['\103\97\109\101\79\98\106\101\99\116'].SetActive(false)c[E].s=true end if api.contains(stopFC,context)then local E=t(context)x(true)c[E].s=false api.teleportPlayer(d,c[E].r['\116\114\97\110\115\102\111\114\109']['\112\111\115\105\116\105\111\110'],c[E].r['\116\114\97\110\115\102\111\114\109']['\101\117\108\101\114\65\110\103\108\101\115'])i['\103\97\109\101\79\98\106\101\99\116'].SetActive(true)end end if callType==LuaCallType.Update then for _,o in pairs(c)do if o.s then local F=api.vector3(A(j['\116\114\97\110\115\102\111\114\109']['\101\117\108\101\114\65\110\103\108\101\115'].x,o.q['\116\114\97\110\115\102\111\114\109']['\101\117\108\101\114\65\110\103\108\101\115'].x),A(j['\116\114\97\110\115\102\111\114\109']['\101\117\108\101\114\65\110\103\108\101\115'].y,o.q['\116\114\97\110\115\102\111\114\109']['\101\117\108\101\114\65\110\103\108\101\115'].y),A(j['\116\114\97\110\115\102\111\114\109']['\101\117\108\101\114\65\110\103\108\101\115'].z,o.q['\116\114\97\110\115\102\111\114\109']['\101\117\108\101\114\65\110\103\108\101\115'].z))api.teleportPlayer(d,api.vector3(o.q['\116\114\97\110\115\102\111\114\109']['\112\111\115\105\116\105\111\110'].x,o.q['\116\114\97\110\115\102\111\114\109']['\112\111\115\105\116\105\111\110'].y-1.6,o.q['\116\114\97\110\115\102\111\114\109']['\112\111\115\105\116\105\111\110'].z),F)end end end
+if callType == LuaCallType.Init then
+	initScript = false
+	characterModels = {}
+	freeCams = {}
+	player = api.getLocalPlayer()
+	function getLevelContainer(transform)
+        local currentTransform = spawn[1].transform.parent
+        if transform then
+            currentTransform = transform.parent
+        end
+        if currentTransform.name == 'LevelContainer' or currentTransform.name == 'LevelContainerEditor' then
+            return spawn[1].gameObject.Find(currentTransform.name)
+        else
+            return getLevelContainer(currentTransform)
+        end
+    end
+    LevelContainer = getLevelContainer()
+    navMesh = LevelContainer.transform.GetChild(0)
+    mainCamera = player.gameObject.FindGameObjectWithTag('MainCamera')
+	function initCharacterModels()
+		local cm = player.gameObject.Find('CharacterModels')
+		if cm then
+			table.insert(characterModels, cm.gameObject)
+			cm.transform.name = 'done'
+			initCharacterModels()
+		end
+	end
+
+	function initFreeCams()
+		for i, fc in ipairs(followFC) do
+			table.insert(freeCams, i, {
+				followTarget = followFC[i],
+				endTarget = endFC[i],
+				active = false
+			})
+		end
+	end
+
+	function getIndex(context)
+        local element = context.gameObject.GetComponent('Element')
+        local index = string.match(element.playerVariableName, "{(%d+)}")
+        return tonumber(index)
+    end
+
+	function toggleCharacterModels(state)
+		for _, cm in ipairs(characterModels) do
+			cm.SetActive(state)
+		end
+	end
+
+	function adjustAngle(current, target)
+		local difference = target - current
+		if difference > 180 or target > 180 then
+			target = target - 360
+		elseif difference < -180 or target < -180 then
+			target = target + 360
+		end
+		return target
+	end
+
+	initCharacterModels()
+	initFreeCams()
+end
+
+if callType == LuaCallType.SwitchDone then
+	if api.contains(startFC, context) then
+		local index = getIndex(context)
+		toggleCharacterModels(false)
+		freeCams[index].followTarget = followFC[index]
+        freeCams[index].endTarget = endFC[index] or {
+            transform = {
+                position = player.transform.position,
+                eulerAngles = mainCamera.transform.eulerAngles
+            }
+        }
+		navMesh.gameObject.SetActive(false)
+		freeCams[index].active = true
+	end
+
+	if api.contains(stopFC, context) then
+		local index = getIndex(context)
+		toggleCharacterModels(true)
+		freeCams[index].active = false
+		api.teleportPlayer(player, freeCams[index].endTarget.transform.position, freeCams[index].endTarget.transform.eulerAngles)
+		navMesh.gameObject.SetActive(true)
+	end
+end
+
+if callType == LuaCallType.Update then
+	for _, fc in pairs(freeCams) do
+		if fc.active then
+			local rotationEuler = api.vector3(
+				adjustAngle(mainCamera.transform.eulerAngles.x, fc.followTarget.transform.eulerAngles.x),
+				adjustAngle(mainCamera.transform.eulerAngles.y, fc.followTarget.transform.eulerAngles.y),
+				adjustAngle(mainCamera.transform.eulerAngles.z, fc.followTarget.transform.eulerAngles.z)
+			)
+			api.teleportPlayer(player, api.vector3(
+				fc.followTarget.transform.position.x,
+				fc.followTarget.transform.position.y - 1.6,
+				fc.followTarget.transform.position.z
+			), rotationEuler)
+		end
+	end
+end
