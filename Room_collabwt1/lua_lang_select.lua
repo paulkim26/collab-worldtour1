@@ -94,7 +94,7 @@ if callType == LuaCallType.Update then
 		end
 	end
 end
-if callType == LuaCallType.SwitchDone then
+if callType == LuaCallType.SwitchStarted then
 	if context == toggleUI[1] then
 		toggleCharacterModels(false)
 	end
