@@ -5,6 +5,11 @@ Room_**
 !Room_collabwt1*/*/*
 !Room_collabwt1*/*/*/*
 !Room_collabwt1*/*/*/*/*
+!Room_collabwt2*
+!Room_collabwt2*/*
+!Room_collabwt2*/*/*
+!Room_collabwt2*/*/*/*
+!Room_collabwt2*/*/*/*/*
 
 # Ignore backup/temp folders
 **/Backups/
