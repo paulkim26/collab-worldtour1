@@ -1,8 +1,8 @@
-# The Collab: World Tour Part 1
+# The Collab: World Tour
 
 ## Introduction
 
-This is the active working repository for The Collab: World Tour Part 1. Whenever changes are made to this repository, one of the Collab managers will push to Steam Workshop.
+This is the active working repository for The Collab: World Tour. Whenever changes are made to this repository, one of the Collab managers will push to Steam Workshop.
 
 ## Setup
 
