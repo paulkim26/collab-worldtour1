@@ -83,7 +83,7 @@ function checkMapleCollision()
 		end
 	end
 	
-	--printTable(cells) --TODODEBUG
+	printTable(cells) --TODODEBUG
 
 	for i = 1, rows do
 		for j = 1, columns do
