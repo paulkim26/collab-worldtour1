@@ -17,3 +17,7 @@ Room_**
 
 # OS specific files
 **/.DS_Store
+
+# IDE and project files
+/.idea
+*.iml
