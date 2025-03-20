@@ -72,15 +72,15 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":1870,
+			"count":1280,
 			"max":[
 				1.4059666395187378,
-				0.21076375246047974,
+				0.21190698444843292,
 				1.3741754293441772
 			],
 			"min":[
 				-1.346556305885315,
-				0.030546916648745537,
+				0.0327335000038147,
 				-1.389106273651123
 			],
 			"type":"VEC3"
@@ -88,45 +88,45 @@
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":1870,
+			"count":1280,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":1870,
+			"count":1280,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":3327,
+			"count":2313,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":22440,
+			"byteLength":15360,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":22440,
-			"byteOffset":22440,
+			"byteLength":15360,
+			"byteOffset":15360,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":14960,
-			"byteOffset":44880,
+			"byteLength":10240,
+			"byteOffset":30720,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":6654,
-			"byteOffset":59840,
+			"byteLength":4626,
+			"byteOffset":40960,
 			"target":34963
 		}
 	],
@@ -138,7 +138,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":66496,
+			"byteLength":45588,
 			"uri":"mdl_brush_hutfloor.bin"
 		}
 	]
