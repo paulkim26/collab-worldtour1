@@ -1,6 +1,6 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.2.57",
+		"generator":"Khronos glTF Blender I/O v4.3.47",
 		"version":"2.0"
 	},
 	"extensionsUsed":[
@@ -11,28 +11,21 @@
 		{
 			"name":"Scene",
 			"nodes":[
-				0,
 				1
 			]
 		}
 	],
 	"nodes":[
 		{
-			"name":"GOOGLE_SAT_WM",
-			"scale":[
-				8560.947265625,
-				1,
-				8560.947265625
-			],
-			"translation":[
-				448.7054138183594,
-				0,
-				0.3137063682079315
-			]
+			"mesh":0,
+			"name":"LionMountain#boxcollider"
 		},
 		{
-			"mesh":0,
-			"name":"EXPORT_GOOGLE_SAT_WM"
+			"children":[
+				0
+			],
+			"mesh":1,
+			"name":"LionMountain"
 		}
 	],
 	"materials":[
@@ -54,16 +47,29 @@
 	],
 	"meshes":[
 		{
-			"name":"EXPORT_GOOGLE_SAT_WM",
+			"name":"LionMountain#boxcollider",
 			"primitives":[
 				{
 					"attributes":{
 						"POSITION":0,
 						"NORMAL":1,
-						"TEXCOORD_0":2,
-						"TEXCOORD_1":3
+						"TEXCOORD_0":2
 					},
-					"indices":4,
+					"indices":3
+				}
+			]
+		},
+		{
+			"name":"EXPORT_GOOGLE_SAT_WM",
+			"primitives":[
+				{
+					"attributes":{
+						"POSITION":4,
+						"NORMAL":5,
+						"TEXCOORD_0":6,
+						"TEXCOORD_1":7
+					},
+					"indices":8,
 					"material":0
 				}
 			]
@@ -86,6 +92,40 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
+			"count":24,
+			"max":[
+				-1149.7691650390625,
+				1905.6767578125,
+				891.656005859375
+			],
+			"min":[
+				-1349.769287109375,
+				1705.6767578125,
+				691.656005859375
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":1,
+			"componentType":5126,
+			"count":24,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":2,
+			"componentType":5126,
+			"count":24,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":3,
+			"componentType":5123,
+			"count":36,
+			"type":"SCALAR"
+		},
+		{
+			"bufferView":4,
+			"componentType":5126,
 			"count":838,
 			"max":[
 				3783.182861328125,
@@ -100,25 +140,25 @@
 			"type":"VEC3"
 		},
 		{
-			"bufferView":1,
+			"bufferView":5,
 			"componentType":5126,
 			"count":838,
 			"type":"VEC3"
 		},
 		{
-			"bufferView":2,
+			"bufferView":6,
 			"componentType":5126,
 			"count":838,
 			"type":"VEC2"
 		},
 		{
-			"bufferView":3,
+			"bufferView":7,
 			"componentType":5126,
 			"count":838,
 			"type":"VEC2"
 		},
 		{
-			"bufferView":4,
+			"bufferView":8,
 			"componentType":5123,
 			"count":3522,
 			"type":"SCALAR"
@@ -127,32 +167,56 @@
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":10056,
+			"byteLength":288,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
+			"byteLength":288,
+			"byteOffset":288,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":192,
+			"byteOffset":576,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":72,
+			"byteOffset":768,
+			"target":34963
+		},
+		{
+			"buffer":0,
 			"byteLength":10056,
-			"byteOffset":10056,
+			"byteOffset":840,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":10056,
+			"byteOffset":10896,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":6704,
-			"byteOffset":20112,
+			"byteOffset":20952,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":6704,
-			"byteOffset":26816,
+			"byteOffset":27656,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":7044,
-			"byteOffset":33520,
+			"byteOffset":34360,
 			"target":34963
 		}
 	],
@@ -166,7 +230,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":40564,
+			"byteLength":41404,
 			"uri":"mdl_brush_mountains.bin"
 		}
 	]
