@@ -1,0 +1,11 @@
+Model Information:
+* title:	Estatua del Inca
+* source:	https://sketchfab.com/3d-models/estatua-del-inca-94391d9b520f440e84920dfbea20be8b
+* author:	Ministerio de Cultura Perú (https://sketchfab.com/MinisteriodeCulturaPeru)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Estatua del Inca" (https://sketchfab.com/3d-models/estatua-del-inca-94391d9b520f440e84920dfbea20be8b) by Ministerio de Cultura Perú (https://sketchfab.com/MinisteriodeCulturaPeru) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
