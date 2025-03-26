@@ -1,6 +1,6 @@
 {
 	"asset":{
-		"generator":"Khronos glTF Blender I/O v4.0.44",
+		"generator":"Khronos glTF Blender I/O v4.4.55",
 		"version":"2.0"
 	},
 	"scene":0,
@@ -99,14 +99,14 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":10,
+			"count":15,
 			"max":[
 				0.10331070423126221,
-				0.11245520412921906,
+				0.11245512962341309,
 				0.030384210869669914
 			],
 			"min":[
-				-0.36245524883270264,
+				-0.13340304791927338,
 				-0.11245513707399368,
 				0.030384158715605736
 			],
@@ -115,32 +115,32 @@
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":10,
+			"count":15,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":10,
+			"count":15,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":24,
+			"count":48,
 			"type":"SCALAR"
 		},
 		{
 			"bufferView":4,
 			"componentType":5126,
-			"count":74,
+			"count":105,
 			"max":[
 				0.12499988079071045,
-				0.12500011920928955,
+				0.12500004470348358,
 				0.030384212732315063
 			],
 			"min":[
-				-0.37500011920928955,
+				-0.14363527297973633,
 				-0.12500004470348358,
 				-2.812578614452832e-08
 			],
@@ -149,69 +149,69 @@
 		{
 			"bufferView":5,
 			"componentType":5126,
-			"count":74,
+			"count":105,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":6,
 			"componentType":5126,
-			"count":74,
+			"count":105,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":7,
 			"componentType":5123,
-			"count":204,
+			"count":312,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":120,
+			"byteLength":180,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
+			"byteLength":180,
+			"byteOffset":180,
+			"target":34962
+		},
+		{
+			"buffer":0,
 			"byteLength":120,
-			"byteOffset":120,
+			"byteOffset":360,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":80,
-			"byteOffset":240,
-			"target":34962
-		},
-		{
-			"buffer":0,
-			"byteLength":48,
-			"byteOffset":320,
+			"byteLength":96,
+			"byteOffset":480,
 			"target":34963
 		},
 		{
 			"buffer":0,
-			"byteLength":888,
-			"byteOffset":368,
+			"byteLength":1260,
+			"byteOffset":576,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":888,
-			"byteOffset":1256,
+			"byteLength":1260,
+			"byteOffset":1836,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":592,
-			"byteOffset":2144,
+			"byteLength":840,
+			"byteOffset":3096,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":408,
-			"byteOffset":2736,
+			"byteLength":624,
+			"byteOffset":3936,
 			"target":34963
 		}
 	],
@@ -223,7 +223,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":3144,
+			"byteLength":4560,
 			"uri":"mdl_poland_poempieces_5.bin"
 		}
 	]
