@@ -231,7 +231,7 @@ if callType == LuaCallType.Init then
 		"  10 questions!",
 		"",
 		"",
-		"Press any button to start..."
+		"Insert token to play"
 }
 
 	msgWelcome = {
@@ -251,7 +251,7 @@ if callType == LuaCallType.Init then
 		"",
 		"",
 		"",
-		"Press any button to proceed..."
+		"Press any button to start..."
 	}
 
 	function showImage( index )
@@ -319,7 +319,7 @@ if callType == LuaCallType.Init then
 				end
 			end
 
-			api.toggleActivator( wollo_globe_bonusOn[highestCountry] )
+			--api.toggleActivator( wollo_globe_bonusOn[highestCountry] )
 			state = states.endScreen
 			waitForMessage( highestCountry )
 			showMessage(
@@ -335,15 +335,17 @@ if callType == LuaCallType.Init then
 						"                                       ",
 						"                                      ",
 						"                                      ",
-						--"",
-						--"",
-						--"",
-						--"",
-						--"",
-						--"Unlocked bonus content for this country"
+						"",
+						"",
+						"",
+						"",
+						"",
+						"Insert token to play again"
 					}
 			)
 			scores = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+			wollo_quizTokenSlot.gameObject.setActive(true)
+
 			return
 		end
 
@@ -377,7 +379,25 @@ if callType == LuaCallType.Init then
 
 elseif callType == LuaCallType.SwitchStarted
 then
-	if context == delayTicker then
+	if context == wollo_quizCoinPlaced then
+		api.log("Placed Coin")
+		insertedToken = wollo_quizTokenSlot.insertedKey.gameObject.GetComponent('Switch')
+		wollo_quizTokenSlot.gameObject.setActive(false)
+
+	elseif context == wollo_quizCoinInserted then
+		api.log("Inserted Coin")
+
+		insertedToken = wollo_quizTokenSlot.insertedKey.gameObject.GetComponent('Switch')
+		insertedToken.gameObject.setActive(false)
+		wollo_quizTokenSlot.insertedKey = nil
+
+		currentQuestion = 0
+
+		showMessage(msgWelcome)
+		showImage( 11 )
+		state = states.welcomeScreen
+
+	elseif context == delayTicker then
 		if delayedChars[1] then
 			api.setLockValue( wollo_countryScreenLock, delayedChars[1][1], delayedChars[1][2] )
 			table.remove(delayedChars, 1)
@@ -401,11 +421,6 @@ then
 		end
 
 		if state == states.startScreen then
-			currentQuestion = 0
-
-			showMessage(msgWelcome)
-			showImage( 11 )
-			state = states.welcomeScreen
 
 		elseif state == states.endScreen then
 			showMessage(msgStart)
