@@ -333,8 +333,8 @@ if callType == LuaCallType.Init then
 						"                                       ",
 						"                                       ",
 						"                                       ",
-						"                                      ",
-						"                                      ",
+						"a",
+						"",
 						"",
 						"",
 						"",
@@ -345,7 +345,7 @@ if callType == LuaCallType.Init then
 			)
 			scores = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
 			wollo_quizTokenSlot.gameObject.setActive(true)
-
+			api.setLockValue(wollo_midiAnthem[highestCountry], 1, 1)
 			return
 		end
 
@@ -380,12 +380,10 @@ if callType == LuaCallType.Init then
 elseif callType == LuaCallType.SwitchStarted
 then
 	if context == wollo_quizCoinPlaced then
-		api.log("Placed Coin")
 		insertedToken = wollo_quizTokenSlot.insertedKey.gameObject.GetComponent('Switch')
 		wollo_quizTokenSlot.gameObject.setActive(false)
 
 	elseif context == wollo_quizCoinInserted then
-		api.log("Inserted Coin")
 
 		insertedToken = wollo_quizTokenSlot.insertedKey.gameObject.GetComponent('Switch')
 		insertedToken.gameObject.setActive(false)
@@ -396,7 +394,7 @@ then
 		showMessage(msgWelcome)
 		showImage( 11 )
 		state = states.welcomeScreen
-
+		api.setLockValue(wollo_midiStart, 1, 1)
 	elseif context == delayTicker then
 		if delayedChars[1] then
 			api.setLockValue( wollo_countryScreenLock, delayedChars[1][1], delayedChars[1][2] )
