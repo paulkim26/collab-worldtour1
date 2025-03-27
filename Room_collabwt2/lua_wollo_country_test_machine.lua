@@ -333,7 +333,7 @@ if callType == LuaCallType.Init then
 						"                                       ",
 						"                                       ",
 						"                                       ",
-						"a",
+						"",
 						"",
 						"",
 						"",
