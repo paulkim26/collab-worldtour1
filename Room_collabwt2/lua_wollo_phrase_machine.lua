@@ -1,6 +1,6 @@
 if callType == LuaCallType.Init then
 
-    charset = " 0123456789ABCD" .. "EFGHIJKLMNOPQRSTU" .. "VWXYZabcdefghijk" .. "lmnopqrstuvwxyz." .. ":,;-_+*#’“”\"'<>!" .. "§$%&/()=?|@€[]{}" .. "¡¿áèéñóęłƐɔΑΒΓΚΠ" .. "ΣΧάέήίαγεζηθικλμ" .. "νοπρστυόύώกขคงฉช" .. "ดตทนมยรลวษสหอัาำ" .. "ิีุูเโไ็่้์"
+    charset = " 0123456789ABCD" .. "EFGHIJKLMNOPQRSTU" .. "VWXYZabcdefghijk" .. "lmnopqrstuvwxyz." .. ":,;-_+*#’“”\"'<>!" .. "§$%&/()=?|@€[]{}" .. "¡¿áèéñóęłƐɔΑΒΓΚΠ" .. "ΣΧάέήίαγεζηθικλμ" .. "νοπρστυόύώ"--กขคงฉช" .. "ดตทนมยรลวษสหอัาำ" .. "ิีุูเโไ็่้์"
     lines = 4
     cols = 30
     charPosMap = {}
@@ -108,15 +108,25 @@ if callType == LuaCallType.Init then
         },
         {
             -- Thai
-            "สวัสดี!",
-            "สวัสดีตอนเย็น!",
-            "ลาก่อน!",
-            "ขอโทษที",
-            "ห้องน้ำอยู่ไหน?",
-            "ราคาเท่าไหร่?",
-            "ช่วยด้วย!",
-            "ฉันต้องการหมอ",
-            "สุขสันต์วันเกิด!"
+            --"สวัสดี!",
+            --"สวัสดีตอนเย็น!",
+            --"ลาก่อน!",
+            --"ขอโทษที",
+            --"ห้องน้ำอยู่ไหน?",
+            --"ราคาเท่าไหร่?",
+            --"ช่วยด้วย!",
+            --"ฉันต้องการหมอ",
+            --"สุขสันต์วันเกิด!"
+            { 0, 27, 0, 28, 22 },
+            { 0, 27, 0, 28, 1, 2, 3, 18, 29, 3, 22 },
+            { 4, 19, 30, 2, 3, 22 },
+            { 5, 2, 20, 6, 7, 31 },
+            { 32, 2, 8, 33, 19, 2, 44, 21, 9, 3, 23 },
+            { 10, 19, 11, 19, 18, 34, 19, 21, 9, 35, 23 },
+            { 36, 13, 12, 37, 13, 12, 22 },
+            { 38, 3, 39, 2, 8, 14, 19, 10, 9, 15, 2 },
+            { 40, 5, 41, 3, 42, 27, 3, 18, 43, 16, 22 }
+
         }
     }
 
@@ -152,11 +162,11 @@ if callType == LuaCallType.Init then
         end
 
         phrase = phrases[currentLanguage][currentPhrase]
-        showLine(1, phrase)
+        showLine(1, phrase, currentLanguage)
 
         if currentLanguage ~= languages.english then
             phrase = phrases[languages.english][currentPhrase]
-            showLine(3, phrase)
+            showLine(3, phrase, languages.english)
         end
 
 
@@ -176,10 +186,29 @@ if callType == LuaCallType.Init then
         return splitLines
     end
 
-    function showLine(line, text)
-        splitLines = splitLine(text)
-        for l, t in ipairs(splitLines) do
-            showLineInternal(line + l - 1, t)
+    function showLine(line, text, currentLanguage)
+        if currentLanguage == languages.thai then
+            -- note: not splitting these, as Thai sentences have few characters and splitting would require extra work
+            showCharCodeLineInternal(line, text,  8 * 16 + 11)
+        else
+            splitLines = splitLine(text)
+            for l, t in ipairs(splitLines) do
+                showLineInternal(line + l - 1, t)
+            end
+        end
+    end
+
+    function showCharCodeLineInternal(line, chars, charSetOffset )
+        lockPos = (line - 1) * cols
+
+        for i, c in ipairs(chars) do
+            lockPos = lockPos + 1
+            charPos = charSetOffset + c
+            if  charPos then
+                table.insert( delayedChars, { charPos - 1, lockPos } )
+            else
+                --api.log( 'Message contains unknown character: '..char..' at position '..c )
+            end
         end
     end
 
