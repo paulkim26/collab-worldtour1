@@ -60,3 +60,8 @@ The repository is now set up on your computer.
 <img width="446" alt="243547012-63a033a5-74a4-4408-83a3-3e42688d37c7" src="https://github.com/paulkim26/collab-worldtour1/assets/45007945/8d3efd5f-cbff-4f54-8764-549d9f9e605a">
 
 11. Post in the #github-pull-requests once the pull request is created. Another collaborator will review your changes. If accepted, they will merge your new changes in and one of the Collab managers will upload it to Steam Workshop. If rejected, you will be asked to make changes.
+
+## Deployment Checklist
+
+- Make sure debug visibility activator is turned on
+- Backup Steam workshop description (and copy back in after update)
